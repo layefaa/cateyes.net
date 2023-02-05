@@ -1,13 +1,12 @@
 import React from 'react'
+import {Header} from "@/components/templates";
 
 export default function WebsiteLayout({children,}: { children: React.ReactNode }) {
   return (
       <html lang="en">
       <head/>
-      <body>
-      <nav>
-        {/*Navbar*/}
-      </nav>
+      <body className={`bg-ce-primary-black text-ce-primary-white`}>
+      <Header/>
       {children}
       <footer>
         {/*Footer*/}

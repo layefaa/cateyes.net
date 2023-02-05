@@ -1,9 +1,11 @@
 import React from 'react';
+import cateyes from '../../../public/cateyes.svg'
+import Image from "next/image";
 
-const Logo:React.FC = () => {
+const Logo: React.FC = () => {
   return (
-      <div className={`bg-red-300 w-screen h-screen`}>
-
+      <div className={`relative w-[4.6rem] h-[2.4rem] md:w-[16.3rem] md:h-[5.2rem]`}>
+        <Image src={cateyes} alt={'Cateyes'} fill priority/>
       </div>
   );
 };

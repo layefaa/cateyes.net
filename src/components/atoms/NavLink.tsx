@@ -1,10 +1,16 @@
 import React from 'react';
+import Link from "next/link";
 
-const NavLinks: React.FC = () => {
+interface Link {
+  name: string,
+  route: string
+}
+
+const NavLinks = ({route, name}: Link) => {
   return (
-      <div>
-
-      </div>
+      <Link href={route}>
+        {name}
+      </Link>
   );
 };
 
