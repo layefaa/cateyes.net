@@ -1,11 +1,11 @@
 import React from 'react';
-import {Navbar, NavigationBox} from "@/components/organisms";
+import {Navbar} from "@/components/organisms";
 
 const Header: React.FC = () => {
   return (
-      <div className={`relative`}>
+      <div className={`relative `}>
         <Navbar/>
-        <NavigationBox/>
+        {/*<NavigationBox/>*/}
       </div>
   );
 };

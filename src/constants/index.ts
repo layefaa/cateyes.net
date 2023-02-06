@@ -1,9 +1,4 @@
-export const fonts = {
-  otf : '/fonts/MORVA.oft',
-  ttf : '/fonts/MORVA.ttf'
-}
-
-export const routes = [
+ export const routes = [
   {
     name: 'Home',
     route: '/'
