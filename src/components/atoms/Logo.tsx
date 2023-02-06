@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const Logo: React.FC = () => {
   return (
-      <div className={`relative w-[4.6rem] h-[2.4rem] md:w-[16.3rem] md:h-[5.2rem]`}>
+      <div className={`relative w-[8rem] h-[4rem] md:w-[16.3rem] md:h-[5.2rem]`}>
         <Image src={cateyes} alt={'Cateyes'} fill priority/>
       </div>
   );
