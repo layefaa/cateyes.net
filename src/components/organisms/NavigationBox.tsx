@@ -20,7 +20,7 @@ const NavigationBox = () => {
             <p className={`text-20 sm:text-24 md:text-32 `}>{menuHeader}</p>
           </MorvaText>
           <p className={'font-light py-10 md:py-28 '}>{menuSubHeader}</p>
-          <div className={`text-center text-ce-secondary-white  pb-10 md:pb-28`}>
+          <div className={`text-center text-ce-secondary-white font-semibold  pb-10 md:pb-28`}>
             <p>{email}</p>
             <p className={`mt-4 md:mt-6`}>{phone}</p>
           </div>

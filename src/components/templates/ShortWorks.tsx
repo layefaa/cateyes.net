@@ -1,9 +1,9 @@
 import React from 'react';
 
-const ShortWorks: React.FC = () => {
+const ShortWorks = () => {
   return (
       <div>
-
+        works
       </div>
   );
 };

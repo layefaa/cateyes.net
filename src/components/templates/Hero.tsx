@@ -1,9 +1,9 @@
 import React from 'react';
 
-const Hero: React.FC = () => {
+const Hero = () => {
   return (
       <div>
-
+        Hero
       </div>
   );
 };

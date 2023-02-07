@@ -5,5 +5,4 @@ export interface IMenuContext {
 
 export interface ISocialIcon {
   strokeColor: string,
-  strokeColor2?: string
 }

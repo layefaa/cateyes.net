@@ -10,7 +10,8 @@ module.exports = {
 				'ce-primary-black': '#0E0E0E',
 				'ce-secondary-black': '#171717',
 				'ce-primary-white': 'rgba(255, 255, 255, 0.75)',
-				'ce-secondary-white': '#FFFFFF'
+				'ce-secondary-white': 'hsl(0, 0%, 100%)',
+				'ce-tertiary-white': 'hsl(0, 0%, 50%)'
 			},
 			spacing: {
 				'24': '2.4rem',

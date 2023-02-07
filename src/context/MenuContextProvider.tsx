@@ -4,7 +4,7 @@ import {MenuContext} from "@/context/MenuContext";
 
 const MenuContextProvider = ({children}: { children: ReactNode }) => {
 
-  const [isOpen, toggle] = useState<boolean>(true)
+  const [isOpen, toggle] = useState<boolean>(false)
   const toggleMenu = () => {
     toggle((prevState) => !prevState)
   }

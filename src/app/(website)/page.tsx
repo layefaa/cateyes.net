@@ -1,9 +1,9 @@
+import {HomePage} from "@/components/pages";
+
 export default function Home() {
   return (
-      <main>
-
-        <p>Index</p>
-
-      </main>
+      <>
+        <HomePage/>
+      </>
   )
 }
