@@ -1,8 +1,8 @@
- export const routes = [
+export const routes = [
   {
     name: 'Home',
     route: '/'
-  } , {
+  }, {
     name: 'About',
     route: '/about'
   }, {
@@ -14,10 +14,18 @@
   }
 ]
 
- export const menuHeader = 'let’s work together'
+export const menuHeader = 'let’s work together'
 
- export const menuSubHeader = 'Tell your story through pixels'
+export const menuSubHeader = 'Tell your story through pixels'
 
- export const email = 'cateyes@mail.com'
+export const email = 'cateyes@mail.com'
 
- export const phone = '09023546789'
+export const phone = '09023546789'
+
+export const socials = {
+  ig: '/#',
+  twitter: '/#',
+  fb: '/#',
+  tiktok: '/#',
+  youtube: '/#',
+}
