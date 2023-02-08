@@ -9,7 +9,7 @@ module.exports = {
 			colors: {
 				'ce-primary-black': '#0E0E0E',
 				'ce-secondary-black': '#171717',
-				'ce-primary-white': 'rgba(255, 255, 255, 0.75)',
+				'ce-primary-white': 'hsl(0, 0%, 75%)',
 				'ce-secondary-white': 'hsl(0, 0%, 100%)',
 				'ce-tertiary-white': 'hsl(0, 0%, 50%)'
 			},
@@ -28,7 +28,6 @@ module.exports = {
 				'36': '3.6rem',
 				'40': '4rem',
 				'48': '4.8rem'
-				
 			}
 		},
 	},

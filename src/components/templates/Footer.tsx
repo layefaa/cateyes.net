@@ -12,7 +12,7 @@ const Footer = () => {
         </div>
         <div>
           <p>Follow</p>
-          <Socials strokeColor={'stroke-ce-tertiary-white'} strokeColor2={'stroke-ce-tertiary-white'}/>
+          <Socials strokeColor={'stroke-ce-tertiary-white'}/>
         </div>
       </div>
   );
