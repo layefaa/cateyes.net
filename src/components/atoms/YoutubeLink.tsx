@@ -9,10 +9,10 @@ const YoutubeLink = ({strokeColor}: ISocialIcon) => {
         <path
             className={`${strokeColor} cursor-pointer group-hover:stroke-[#ff0000] group-hover:fill-[#ff0000]`}
             d="M14.1667 4.16675H5.83333C3.99238 4.16675 2.5 5.65913 2.5 7.50008V12.5001C2.5 14.341 3.99238 15.8334 5.83333 15.8334H14.1667C16.0076 15.8334 17.5 14.341 17.5 12.5001V7.50008C17.5 5.65913 16.0076 4.16675 14.1667 4.16675Z"
-            stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
         <path d="M8.33325 7.5L12.4999 10L8.33325 12.5V7.5Z"
-              className={`${strokeColor} group-hover:stroke-white group-hover:fill-white`} stroke-width="2" stroke-linecap="round"
-              stroke-linejoin="round"/>
+              className={`${strokeColor} group-hover:stroke-white group-hover:fill-white`} strokeWidth="2" strokeLinecap="round"
+              strokeLinejoin="round"/>
       </svg>
 
   );
