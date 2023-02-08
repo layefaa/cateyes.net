@@ -2,10 +2,10 @@ import React from 'react';
 import {FbLink, TiktokLink, TwitterLink, WhatsappLink, YoutubeLink} from "@/components/atoms";
 import {ISocialIcon} from "@/interfaces";
 
-const Socials = ({strokeColor, strokeColor2}: ISocialIcon) => {
+const Socials = ({strokeColor}: ISocialIcon) => {
   return (
       <div className={`flex w-fit gap-8`}>
-        <YoutubeLink strokeColor={strokeColor} strokeColor2={strokeColor2}/>
+        <YoutubeLink strokeColor={strokeColor}/>
         <TwitterLink strokeColor={strokeColor}/>
         <FbLink strokeColor={strokeColor}/>
         <WhatsappLink strokeColor={strokeColor}/>
