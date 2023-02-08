@@ -11,8 +11,7 @@ const FollowEffect = () => {
           </svg>
           <p>Follow</p>
         </div>
-        <div className={`hidden  w-fit group-hover:flex`}><Socials strokeColor={'stroke-white'}
-                                                                   strokeColor2={'stroke-white'}/></div>
+        <div className={`hidden  w-fit group-hover:flex`}><Socials strokeColor={'stroke-white'}/></div>
       </div>
   );
 };
