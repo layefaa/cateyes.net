@@ -16,4 +16,5 @@ const FollowEffect = () => {
   );
 };
 
+
 export default FollowEffect;

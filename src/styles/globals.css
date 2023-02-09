@@ -61,7 +61,7 @@ h6 {
 
 
 .filter {
-    background: rgba(24, 24, 24, 0.1);
-    backdrop-filter: blur(35px);
-    -webkit-backdrop-filter: blur(35px);
+    background: rgba(24, 24, 24, .1);
+    backdrop-filter: blur(8rem);
+    -webkit-backdrop-filter: blur(8rem);
 }

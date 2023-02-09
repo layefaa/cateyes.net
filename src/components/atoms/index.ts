@@ -1,5 +1,6 @@
 export {default as Logo} from './Logo'
 export {default as NavLink} from './NavLink'
+export {default as FooterLink} from './FooterLink'
 export {default as MorvaText} from './MorvaText'
 export {default as MenuSwitch} from './MenuSwitch'
 export {default as TwitterLink} from './TwitterLink'

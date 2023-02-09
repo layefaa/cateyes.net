@@ -15,7 +15,7 @@ const NavLinks = ({route, name}: Link) => {
   return (
       <MorvaText>
         <Link
-            className={` hover:text-ce-secondary-white text-32 md:text-36 lg:text-48 ${currentRoute === route ? "text-ce-secondary-white " : "text-ce-primary-white"}`}
+            className={` hover:text-ce-secondary-white text-32 md:text-36 lg:text-48 ${currentRoute === route ? "text-ce-secondary-white " : "text-ce-tertiary-white"}`}
             href={route}>
           {name}
         </Link>

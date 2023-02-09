@@ -3,6 +3,7 @@ import styles from "@/styles";
 import {Logo} from "@/components/atoms";
 import {Menu} from "@/components/molecules";
 import {FollowEffect} from "@/components/organisms";
+import Link from "next/link";
 
 
 const Navbar = () => {
@@ -12,7 +13,9 @@ const Navbar = () => {
         <div className={`w-[30%]`}>
           <FollowEffect/>
         </div>
-        <Logo/>
+        <Link href={'/'} className={`relative w-[8rem] h-[4rem] md:w-[16.3rem] md:h-[5.2rem]`}>
+          <Logo/>
+        </Link>
         <div className={`w-[30%] flex justify-end`}>
           <Menu/>
         </div>
