@@ -3,7 +3,7 @@ import React from 'react';
 import styles from "@/styles";
 import {useMenuContext} from "@/context/MenuContext";
 import {Links} from "@/components/molecules";
-import {MorvaText} from "@/components/atoms";
+import {Button, MorvaText} from "@/components/atoms";
 import {email, menuHeader, menuSubHeader, phone} from "@/constants";
 
 const NavigationBox = () => {
@@ -25,7 +25,7 @@ const NavigationBox = () => {
             <p className={`mt-4 md:mt-6`}>{phone}</p>
           </div>
 
-          <p>Send Button</p>
+          <Button label={'Label'}/>
         </div>
       </div>
   );

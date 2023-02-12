@@ -1,21 +1,25 @@
 import React from 'react';
 import styles from "@/styles";
 import {Socials} from "@/components/molecules";
-import {FooterLinksWithLogo} from "@/components/organisms";
+import {CreateMemoriesTogether, FooterLinksWithLogo} from "@/components/organisms";
 
 const Footer = () => {
   return (
       <div
-          className={`bg-ce-secondary-black ${styles.containerPaddingX} flex flex-col md:flex-row md:justify-between `}>
-        <FooterLinksWithLogo/>
-        <div>
-          <p className={'text-ce-secondary-white text-20 font-[400] h-[4rem] bg-red-400'}>
-            <span  className={'inline-block align-middle'}>
-            Follow
-          </span>
-          </p>
-          <Socials strokeColor={'stroke-ce-tertiary-white'}/>
+          className={`bg-ce-secondary-black ${styles.containerPaddingX} flex flex-col pt-[8rem] pb-[4rem] md:pt-[12rem] `}>
+        <div className={'mb-[10rem] md:mb-[24rem]'}>
+          <CreateMemoriesTogether/>
         </div>
+        <div className={'flex flex-col md:flex-row md:justify-between'}>
+          <FooterLinksWithLogo/>
+          <div className={'mt-[4rem] md:mt-0'}>
+            <p className={'text-ce-secondary-white mb-[1rem] md:mb-[2rem] text-18 font-[300] h-[4rem] py-[1rem] text-left md:text-right'}>
+              Follow
+            </p>
+            <Socials strokeColor={'stroke-ce-tertiary-white'}/>
+          </div>
+        </div>
+
       </div>
   );
 };

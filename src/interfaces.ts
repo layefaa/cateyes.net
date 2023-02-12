@@ -6,3 +6,7 @@ export interface IMenuContext {
 export interface ISocialIcon {
   strokeColor: string,
 }
+
+export interface IButton {
+  label: string
+}

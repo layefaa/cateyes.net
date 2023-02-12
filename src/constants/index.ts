@@ -35,6 +35,8 @@ export const email = 'cateyes@mail.com'
 
 export const phone = '09023546789'
 
+export const footerHeader = 'let’s create memories together'
+
 export const socials = {
   ig: '/#',
   twitter: '/#',
