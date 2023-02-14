@@ -4,6 +4,7 @@ import "swiper/css";
 import {Swiper, SwiperSlide} from "swiper/react";
 import SwiperCore, {Autoplay, EffectFlip, Pagination} from "swiper";
 import {CarouselSlideContainer} from "@/components/atoms";
+import {CarouselPagination} from "@/utils/CarouselPagination";
 
 // @ts-ignore
 const Carousel = ({images}) => {
@@ -14,6 +15,8 @@ const Carousel = ({images}) => {
               loop
               spaceBetween={50}
               slidesPerView={1}
+              pagination={CarouselPagination}
+              modules={[Pagination]}
               // onSlideChange={() => console.log('slide change')}
               // onSwiper={(swiper) => console.log(swiper)}
           >

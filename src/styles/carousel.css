@@ -1,15 +1,20 @@
 .swiper-pagination-bullet {
-    width: 20px;
-    height: 20px;
-    text-align: center;
-    line-height: 20px;
-    font-size: 12px;
-    color: #000;
-    opacity: 1;
-    background: rgba(0, 0, 0, 0.2);
+    width: 0.863rem;
+    height: 0.863rem;
+
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 1.8rem;
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 2;
 }
 
 .swiper-pagination-bullet-active {
-    color: #fff;
-    background: #007aff;
+    width: 3.022rem;
+    height: 0.863rem;
+    order: 0;
+    background: #FFFFFF;
+
 }

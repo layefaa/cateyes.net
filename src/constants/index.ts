@@ -44,3 +44,7 @@ export const socials = {
   tiktok: '/#',
   youtube: '/#',
 }
+
+export const homeCarousel = [
+  {url: '/slides/slide2.png'}, {url: '/slides/slide1.png'}, {url: '/slides/slide3.png'}
+]

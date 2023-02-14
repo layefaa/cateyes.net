@@ -3,6 +3,7 @@ import React from 'react';
 
 import {Carousel} from "@/components/molecules";
 import {MorvaText} from "@/components/atoms";
+import {homeCarousel} from "@/constants";
 
 const CarouselWithHeroText = () => {
 
@@ -19,7 +20,7 @@ const CarouselWithHeroText = () => {
         </div>
         <div className={'w-full'}>
           {/*@ts-ignore*/}
-          <Carousel images={[{url: '/slides/slide2.png'}, {url: '/slides/slide1.png'}]}/>
+          <Carousel images={homeCarousel}/>
         </div>
 
       </div>
