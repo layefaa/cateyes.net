@@ -9,7 +9,7 @@ const CarouselWithHeroText = () => {
   return (
       <div className={'flex flex-col items-center'}>
         <div
-            className={'mt-[6rem] md:mt-[7rem] mb-[5rem] text-20 sm:text-32 md:text-40 leading-[165%] flex justify-center md:justify-self-center md:w-[60%]'}>
+            className={'mt-[6rem] md:mt-[7rem] mb-[5rem] text-20 sm:text-32 md:text-40 leading-[165%] flex justify-center md:justify-self-center sm:w-[50%] md:w-[60%]'}>
           <div className={'flex flex-wrap justify-center w-full'}>
             <p>Transforming</p>
             <MorvaText>landscapes</MorvaText>
