@@ -1,10 +1,13 @@
+'use client'
 import React from 'react';
+import {CarouselWithHeroText} from "@/components/organisms";
 
 const Hero = () => {
   return (
-      <div className={'h-[50vh]'}>
-        Hero
+      <div className={'max-h-screen '}>
+        <CarouselWithHeroText/>
       </div>
+
   );
 };
 

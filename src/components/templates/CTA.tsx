@@ -1,6 +1,6 @@
 import React from 'react';
 
-const CTA: React.FC = () => {
+const CTA = () => {
   return (
       <div>
 
