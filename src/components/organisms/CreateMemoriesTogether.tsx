@@ -13,7 +13,7 @@ const CreateMemoriesTogether = () => {
             </p>
           </div>
         </MorvaText>
-        <div className={'mt-[2rem] mb-[4rem] mb-[6rem]'}>
+        <div className={'mt-[2rem] mb-[4rem] md:mb-[6rem]'}>
           <p>{menuSubHeader}</p>
         </div>
         <ContactUsButton/>

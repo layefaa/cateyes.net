@@ -12,7 +12,7 @@ const Footer = () => {
         </div>
         <div className={'flex flex-col sm:flex-row sm:justify-between'}>
           <FooterLinksWithLogo/>
-          <div className={'mt-[4rem] md:mt-0'}>
+          <div className={'mt-[4rem] sm:mt-0'}>
             <p className={'text-ce-secondary-white mb-[1rem] md:mb-[2rem] text-18 font-[300] h-[4rem] py-[1rem] text-left md:text-right'}>
               Follow
             </p>

@@ -1,6 +1,6 @@
 import React from 'react';
 
-const ShortAbout: React.FC = () => {
+const ShortAbout = () => {
   return (
       <div className={'h-[50vh]'}>
       </div>
