@@ -1,3 +1,7 @@
+.swiper-pagination {
+    margin-bottom: 1.5rem;
+}
+
 .swiper-pagination-bullet {
     width: 0.863rem;
     height: 0.863rem;
@@ -9,6 +13,7 @@
 
     flex: none;
     order: 2;
+
 }
 
 .swiper-pagination-bullet-active {
@@ -16,5 +21,4 @@
     height: 0.863rem;
     order: 0;
     background: #FFFFFF;
-
 }

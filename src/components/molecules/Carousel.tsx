@@ -13,7 +13,6 @@ const Carousel = ({images}) => {
           <Swiper
               autoplay
               loop
-              spaceBetween={50}
               slidesPerView={1}
               pagination={CarouselPagination}
               modules={[Pagination]}
