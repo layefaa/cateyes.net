@@ -65,3 +65,11 @@ h6 {
     backdrop-filter: blur(8rem);
     -webkit-backdrop-filter: blur(8rem);
 }
+
+.aboutXPadding {
+    @apply px-0 lg:px-80
+}
+
+.aboutRInnerPadding {
+    @apply pr-0 sm:pr-20 lg:pr-80
+}
