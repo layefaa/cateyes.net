@@ -4,9 +4,17 @@ import {Hero, ShortAbout, ShortWorks} from "@/components/templates";
 const HomePage = () => {
   return (
       <>
-        <Hero/>
-        <ShortAbout/>
-        <ShortWorks/>
+        <div className={'max-h-screen  bg-amber-200'}>
+          <Hero/>
+        </div>
+        <div>
+          <ShortAbout/>
+        </div>
+        <div>
+          <ShortWorks/>
+        </div>
+
+
       </>
   );
 };
