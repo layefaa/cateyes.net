@@ -1,9 +1,11 @@
 'use client'
 import React from 'react';
-
 import {Carousel} from "@/components/molecules";
 import {MorvaText} from "@/components/atoms";
 import {homeCarousel} from "@/constants";
+import {CarouselPagination} from "@/utils/CarouselPagination";
+import {Pagination} from "swiper";
+
 
 const CarouselWithHeroText = () => {
 
@@ -20,7 +22,7 @@ const CarouselWithHeroText = () => {
         </div>
         <div className={'w-full'}>
           {/*@ts-ignore*/}
-          <Carousel images={homeCarousel}/>
+          <Carousel images={homeCarousel} CarouselPagination={CarouselPagination} Pagination={ Pagination}/>
         </div>
 
       </div>

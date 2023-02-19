@@ -1,13 +1,14 @@
 import React from 'react';
 import {Hero, ShortAbout, ShortWorks} from "@/components/templates";
+import styles from "@/styles";
 
 const HomePage = () => {
   return (
       <>
-        <div className={'max-h-screen  bg-amber-200'}>
+        <div>
           <Hero/>
         </div>
-        <div>
+        <div className={`${styles.sectionPaddingY}`}>
           <ShortAbout/>
         </div>
         <div>

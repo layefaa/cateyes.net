@@ -23,7 +23,10 @@ const Carousel = ({images}) => {
               images.map((img: any) => {
                     return (
                         <SwiperSlide key={img.url}>
-                          <CarouselSlideContainer img={img}/>
+                          <div className={'relative w-full h-[48rem] md:h-[55rem]'}>
+                            <CarouselSlideContainer img={img}/>
+                          </div>
+
                         </SwiperSlide>
                     )
                   }

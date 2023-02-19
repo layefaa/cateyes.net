@@ -4,4 +4,5 @@ export {default as Menu} from './Menu'
 export {default as Socials} from './Socials'
 export {default as ContactUsButton} from './ContactUsButton'
 export {default as Carousel} from './Carousel'
+export {default as CarouselImages} from './CarouselImages'
 

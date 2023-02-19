@@ -5,12 +5,12 @@ import styles from "@/styles";
 
 const ShortAbout = () => {
   return (
-      <div className={` ${styles.sectionPaddingY} h-full flex flex-col sm:flex-row aboutXPadding`}>
+      <div className={` h-full flex flex-col sm:flex-row aboutXPadding`}>
         <div className={'aboutRInnerPadding mt-0 sm:mt-[4rem] lg:mt-[10rem] sm:w-1/2'}>
           <MorvaText>
-            <p className={'text-24 sm:text-32 md:text-48'}>{aboutGreeting}</p>
+            <h1 className={`${styles.sectionHeader}`}>{aboutGreeting}</h1>
           </MorvaText>
-          <p className={'text-14 md:text-20 mt-[2rem] xl:mt-[4rem] leading-[165%]'}> {aboutYouShort}</p>
+          <p className={`${styles.sectionParagraph} ${styles.sectionMarginBetweenContent}`}> {aboutYouShort}</p>
           <div className={'my-[4rem]'}>
             <Button label={"Learn More"}/>
           </div>
@@ -19,7 +19,6 @@ const ShortAbout = () => {
         <div className={'w-full sm:w-1/2 sm:h-full md:h-[70%] bg-red-800'}>
           <ProfileImage url={'/img/profile.jpg'}/>
         </div>
-
       </div>
   );
 };
