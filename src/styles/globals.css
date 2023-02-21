@@ -73,3 +73,7 @@ h6 {
 .aboutRInnerPadding {
     @apply pr-0 sm:pr-20 lg:pr-80
 }
+
+.aboutLInnerPadding {
+    @apply pl-0 sm:pl-20 lg:pl-80
+}

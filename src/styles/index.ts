@@ -12,7 +12,7 @@ const styles = {
 
   flexBetweenCenter: 'flex justify-between items-center',
 
-  spaceBetweenSections: 'gap-[5rem] md:gap-[10rem] xl:gap-[15rem] 2xl:gap-[20rem]',
+  spaceBetweenSections: 'gap-[5rem] md:gap-[15rem] xl:gap-[20rem]',
 
 };
 

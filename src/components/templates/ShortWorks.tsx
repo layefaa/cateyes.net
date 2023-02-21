@@ -1,5 +1,5 @@
 import React from 'react';
-import {MorvaText} from "@/components/atoms";
+import {Button, MorvaText} from "@/components/atoms";
 import styles from "@/styles";
 import {homeCarousel, myWork, myWorkParagraph} from "@/constants";
 import {CarouselImages} from "@/components/molecules";
@@ -24,7 +24,10 @@ const ShortWorks = () => {
           <div className=" w-full sm:col-span-5 sm:row-span-4 sm:col-start-8 sm:row-start-1 bg-white flex h-full">
             <CarouselImages images={homeCarousel}/>
           </div>
-          <div className=" w-full sm:col-span-5 sm:row-span-2 sm:col-start-8 sm:row-start-5"></div>
+          <div
+              className={` w-full sm:col-span-5 sm:row-span-2 sm:col-start-8 sm:row-start-5 flex items-center aboutLInnerPadding`}>
+            <Button label={'See All'}/>
+          </div>
         </div>
       </div>
   );
