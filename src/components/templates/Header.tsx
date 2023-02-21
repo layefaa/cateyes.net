@@ -1,12 +1,12 @@
 import React from 'react';
 import {Navbar, NavigationBox} from "@/components/organisms";
 
-const Header: React.FC = () => {
+const Header = () => {
   return (
-      <div className={`relative `}>
+      <header className={`relative `}>
         <Navbar/>
         <NavigationBox/>
-      </div>
+      </header>
   );
 };
 

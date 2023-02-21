@@ -1,19 +1,21 @@
 import React from 'react';
 import {Hero, ShortAbout, ShortWorks} from "@/components/templates";
-import styles from "@/styles";
 
 const HomePage = () => {
   return (
       <>
-        <div>
+        <section>
           <Hero/>
-        </div>
-        <div className={`${styles.sectionPaddingY}`}>
+        </section>
+        <section>
           <ShortAbout/>
-        </div>
-        <div>
+        </section>
+        <section>
           <ShortWorks/>
-        </div>
+        </section>
+        <section>
+
+        </section>
 
 
       </>

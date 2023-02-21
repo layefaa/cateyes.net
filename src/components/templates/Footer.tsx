@@ -5,7 +5,7 @@ import {CreateMemoriesTogether, FooterLinksWithLogo} from "@/components/organism
 
 const Footer = () => {
   return (
-      <div
+      <footer
           className={`bg-ce-secondary-black ${styles.containerPaddingX} flex flex-col pt-[8rem] pb-[4rem] md:pt-[12rem] `}>
         <div className={'mb-[10rem] md:mb-[24rem]'}>
           <CreateMemoriesTogether/>
@@ -20,7 +20,7 @@ const Footer = () => {
           </div>
         </div>
 
-      </div>
+      </footer>
   );
 };
 
