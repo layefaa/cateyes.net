@@ -2,7 +2,7 @@
 import React from 'react';
 import SwiperCore, {Autoplay, EffectFlip} from "swiper";
 import {Swiper, SwiperSlide} from "swiper/react";
-import {CarouselSlideContainer} from "@/components/atoms";
+import {CarouselImageContainer} from "@/components/atoms";
 // import {Carousel} from "@/components/molecules/index";
 
 
@@ -19,9 +19,9 @@ const CarouselImages = ({images}) => {
           images.map((img: any) => {
                 return (
                     <SwiperSlide key={img.url}>
-                      <div className={'relative h-[100%] w-[100%] '}>
-                        <CarouselSlideContainer img={img}/>
-                      </div>
+                      {/*<div className={'h-[100%] w-[100%]'}>*/}
+                        <CarouselImageContainer img={img.url}/>
+                      {/*</div>*/}
 
                     </SwiperSlide>
                 )

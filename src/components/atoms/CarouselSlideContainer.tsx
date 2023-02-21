@@ -6,12 +6,9 @@ const CarouselSlideContainer = ({img}: { img: object }) => {
   return (
       <>
         {/*@ts-ignore*/}
-        <Image src={img.url} alt={''} fill
+        <Image className={'object-cover object-center'} src={img.url} alt={''} fill
                sizes="100vw"
-               style={{
-                 objectPosition: 'center',
-                 objectFit: 'cover',
-               }}/>
+             />
       </>
 
 

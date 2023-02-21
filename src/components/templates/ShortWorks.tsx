@@ -15,16 +15,16 @@ const ShortWorks = () => {
         </div>
         <div
             className={`h-full w-full flex flex-col  sm:grid sm:h-[50vh] md:h-[65vh] lg:h-[75vh] gap-24 grid-cols-12 grid-rows-6`}>
-          <div className="h-100 sm:h-full w-full sm:col-span-7 sm:row-span-3 bg-red-400">
+          <div className=" w-full sm:col-span-7 sm:row-span-3 bg-red-400 flex h-full">
             <CarouselImages images={homeCarousel}/>
           </div>
-          <div className="h-100 sm:h-full w-full sm:col-span-7 sm:row-span-3 bg-blue-300 ">
+          <div className=" w-full sm:col-span-7 sm:row-span-3 bg-blue-300 flex h-full ">
             <CarouselImages images={homeCarousel}/>
           </div>
-          <div className="h-100 sm:h-full w-full sm:col-span-5 sm:row-span-4 sm:col-start-8 sm:row-start-1 bg-white">
+          <div className=" w-full sm:col-span-5 sm:row-span-4 sm:col-start-8 sm:row-start-1 bg-white flex h-full">
             <CarouselImages images={homeCarousel}/>
           </div>
-          <div className="h-100 sm:h-full w-full sm:col-span-5 sm:row-span-2 sm:col-start-8 sm:row-start-5"></div>
+          <div className=" w-full sm:col-span-5 sm:row-span-2 sm:col-start-8 sm:row-start-5"></div>
         </div>
       </div>
   );
