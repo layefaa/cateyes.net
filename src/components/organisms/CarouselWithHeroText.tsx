@@ -22,7 +22,7 @@ const CarouselWithHeroText = () => {
         </div>
         <div className={'w-full'}>
           {/*@ts-ignore*/}
-          <Carousel images={homeCarousel} CarouselPagination={CarouselPagination} Pagination={ Pagination}/>
+          <Carousel images={homeCarousel} CarouselPagination={CarouselPagination} Pagination={Pagination}/>
         </div>
 
       </div>

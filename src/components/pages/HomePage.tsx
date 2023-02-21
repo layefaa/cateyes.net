@@ -13,9 +13,8 @@ const HomePage = () => {
         <section>
           <ShortWorks/>
         </section>
-        <section>
+        <section/>
 
-        </section>
 
 
       </>
