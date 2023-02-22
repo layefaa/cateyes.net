@@ -31,18 +31,18 @@ export const menuHeader = 'let’s work together'
 
 export const menuSubHeader = 'Tell your story through pixels'
 
-export const email = 'cateyes@mail.com'
+export const email = 'cateyesmedia22@gmail.com'
 
 export const phone = '09023546789'
 
 export const footerHeader = 'let’s create memories together'
 
 export const socials = {
-  ig: '/#',
-  twitter: '/#',
+  ig: 'https://instagram.com/cat_eyes_shots?igshid=YmMyMTA2M2Y=',
+  twitter: 'https://twitter.com/Cateyesdotnet?t=e0EjyIsALIFnniuJtQKNPA&s=09',
   fb: '/#',
   tiktok: '/#',
-  youtube: '/#',
+  youtube: 'https://youtube.com/@cateyes6805',
 }
 
 export const homeCarousel = [
