@@ -1,11 +1,11 @@
 import React from 'react';
 import {IButton} from "@/interfaces";
 
-const Button = ({label}: IButton) => {
+const Button = ({label, onClick}: IButton) => {
   return (
 
-      <button
-          className="px-[1.6rem] py-[1rem] relative rounded group overflow-hidden font-[400] text-ce-secondary-white border-ce-secondary-white border inline-flex text-14 rounded-[5px] items-center">
+      <button onClick={onClick}
+              className="px-[1.6rem] py-[1rem] relative rounded group overflow-hidden font-[400] text-ce-secondary-white border-ce-secondary-white border inline-flex text-14 rounded-[5px] items-center">
         <span
             className="absolute top-0 left-0 flex w-0 h-full mb-0 transition-all duration-500 ease-out transform translate-x-0 bg-ce-secondary-white group-hover:w-full "></span>
         <span className="relative group-hover:text-ce-primary-black"> {label}</span>

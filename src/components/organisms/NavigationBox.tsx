@@ -2,8 +2,8 @@
 import React from 'react';
 import styles from "@/styles";
 import {useMenuContext} from "@/context/MenuContext";
-import {Links} from "@/components/molecules";
-import {Button, MorvaText} from "@/components/atoms";
+import {ContactUsButton, Links} from "@/components/molecules";
+import {MorvaText} from "@/components/atoms";
 import {email, menuHeader, menuSubHeader, phone} from "@/constants";
 
 const NavigationBox = () => {
@@ -25,7 +25,7 @@ const NavigationBox = () => {
             <p className={`mt-4 md:mt-6`}>{phone}</p>
           </div>
 
-          <Button label={'Label'}/>
+          <ContactUsButton/>
         </div>
       </div>
   );

@@ -1,7 +1,8 @@
 import React from 'react';
-import {Button, MorvaText, ProfileImage} from "@/components/atoms";
+import {MorvaText, ProfileImage} from "@/components/atoms";
 import {aboutGreeting, aboutYouShort} from "@/constants";
 import styles from "@/styles";
+import {AboutButton} from "@/components/molecules";
 
 const ShortAbout = () => {
   return (
@@ -12,7 +13,7 @@ const ShortAbout = () => {
           </MorvaText>
           <p className={`${styles.sectionParagraph} ${styles.sectionMarginBetweenContent}`}> {aboutYouShort}</p>
           <div className={'my-[4rem]'}>
-            <Button label={"Learn More"}/>
+            <AboutButton label={"Learn More"}/>
           </div>
 
         </div>

@@ -8,5 +8,6 @@ export interface ISocialIcon {
 }
 
 export interface IButton {
-  label: string
+  label: string,
+  onClick?: () => void
 }
