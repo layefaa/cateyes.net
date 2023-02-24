@@ -7,8 +7,8 @@ const YoutubeLink = ({strokeColor}: ISocialIcon) => {
 
   return (
       <Link href={socials.youtube} target="_blank">
-        <svg width="20" className={`group/yt cursor-pointer hover:stroke-[#ff0000] hover:fill-[#ff0000]`}
-             height="20"
+        <svg width="22" className={`group/yt cursor-pointer hover:stroke-[#ff0000] hover:fill-[#ff0000]`}
+             height="22"
              viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path
               className={`${strokeColor} group-hover/yt:stroke-[#ff0000] group-hover/yt:fill-[#ff0000]`}
