@@ -8,7 +8,7 @@ const styles = {
   sectionPaddingY: 'my-[8rem] sm:my-[9rem] md:my-[10rem]',
   sectionHeader: 'text-24 sm:text-32 md:text-48',
   sectionParagraph: 'leading-[165%] text-14 md:text-20',
-  sectionMarginBetweenContent: 'my-[2rem] xl:my-[4rem]',
+  sectionMarginBetweenContent: 'my-[2rem] mt-[1.5rem] xl:my-[4rem] xl:mt-[2rem]',
 
   flexBetweenCenter: 'flex justify-between items-center',
 

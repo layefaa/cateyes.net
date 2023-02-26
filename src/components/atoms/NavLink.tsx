@@ -8,8 +8,6 @@ import {childVariants} from "@/utils/motion";
 import {ILink} from "@/interfaces"
 
 
-
-
 const NavLinks = ({route, name}: ILink) => {
   const currentRoute = usePathname();
 

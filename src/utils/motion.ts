@@ -32,6 +32,7 @@ export const navBoxVariants = {
     opacity: 0, y: "-100%",
     transition: {
       type: 'tween',
+      duration: 1
     },
   },
 }
@@ -83,6 +84,32 @@ export const childVariants = {
   }
 };
 
+export const parentVariants2 = (delay: number) => ({
+      open: {
+        transition: {staggerChildren: 0.1, delayChildren: delay}
+      },
+      closed: {
+        transition: {staggerChildren: 0.1, staggerDirection: -1}
+      }
+    }
+);
+export const childVariants2 = {
+  open: {
+    y: 0,
+    opacity: 1,
+    transition: {
+      y: {stiffness: 1000, velocity: -100}
+    }
+  },
+  closed: {
+    y: 100,
+    opacity: 0,
+    transition: {
+      y: {stiffness: 1000}
+    }
+  }
+};
+
 export const slideIn = (type: string, delay: number, duration: number, direction?: string,) => ({
   hidden: {
     x: direction === 'left' ? '-100%' : direction === 'right' ? '100%' : 0,
@@ -102,15 +129,6 @@ export const slideIn = (type: string, delay: number, duration: number, direction
   },
 });
 
-// export const staggerContainer = (staggerChildren?: object, delayChildren?: object) => ({
-//   hidden: {},
-//   show: {
-//     transition: {
-//       staggerChildren,
-//       delayChildren,
-//     },
-//   },
-// });
 
 export const textVariant = (delay: number) => ({
   hidden: {
@@ -127,16 +145,6 @@ export const textVariant = (delay: number) => ({
     },
   },
 });
-
-// export const textContainer = {
-//   hidden: {
-//     opacity: 0,
-//   },
-//   show: (i = 1) => ({
-//     opacity: 1,
-//     transition: {staggerChildren: 0.1, delayChildren: i * 0.1},
-//   }),
-// };
 
 export const textVariant2 = {
   hidden: {

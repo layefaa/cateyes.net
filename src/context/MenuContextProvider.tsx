@@ -1,12 +1,13 @@
 "use client"
-import {ReactNode, useState} from 'react';
+import {ReactNode} from 'react';
 import {MenuContext} from "@/context/MenuContext";
+import {useCycle} from "framer-motion";
 
 const MenuContextProvider = ({children}: { children: ReactNode }) => {
 
-  const [isOpen, toggle] = useState<boolean>(false)
+  const [isOpen, toggle] = useCycle<boolean>(false, true)
   const toggleMenu = () => {
-    toggle((prevState) => !prevState)
+    toggle()
   }
   return (
       <MenuContext.Provider value={{isOpen, toggleMenu}}>
