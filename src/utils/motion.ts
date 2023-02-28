@@ -86,7 +86,7 @@ export const childVariants = {
 
 export const parentVariants2 = (delay: number) => ({
       open: {
-        transition: {staggerChildren: 0.1, delayChildren: delay}
+        transition: {staggerChildren: 0.3, delayChildren: delay}
       },
       closed: {
         transition: {staggerChildren: 0.1, staggerDirection: -1}

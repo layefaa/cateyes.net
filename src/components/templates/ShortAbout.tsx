@@ -12,7 +12,7 @@ const ShortAbout = () => {
         <motion.div initial={'closed'}
                     whileInView={'open'}
                     viewport={{once: true}}
-                    variants={parentVariants2(.5)}
+                    variants={parentVariants2(1)}
                     className={'aboutRInnerPadding mt-0 sm:mt-[4rem] lg:mt-[10rem] sm:w-1/2'}>
           <MorvaText>
             <motion.h1 variants={childVariants2} className={`${styles.sectionHeader}`}>{aboutGreeting}</motion.h1>
@@ -27,7 +27,7 @@ const ShortAbout = () => {
         <motion.div initial="hidden"
                     whileInView="show"
                     viewport={{once: true}}
-                    variants={fadeIn('left', 'tween', 1, .5)}
+                    variants={fadeIn('left', 'tween', 1.4, .5)}
                     className={'w-full sm:w-1/2 sm:h-full md:h-[70%] bg-red-800'}>
           <ProfileImage url={'/img/profile.jpg'}/>
         </motion.div>
