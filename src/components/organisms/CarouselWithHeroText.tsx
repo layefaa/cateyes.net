@@ -5,6 +5,7 @@ import {MorvaText} from "@/components/atoms";
 import {homeCarousel} from "@/constants";
 import {motion} from "framer-motion";
 import {fadeIn, textVariant} from "@/utils/motion";
+import styles from "@/styles";
 
 
 const CarouselWithHeroText = () => {
@@ -17,7 +18,7 @@ const CarouselWithHeroText = () => {
             whileInView="show"
             viewport={{once: true}}
             variants={textVariant(.8)}
-            className={'mt-[6rem] md:mt-[7rem] mb-[5rem] text-20 sm:text-32 md:text-40 leading-[165%] flex justify-center md:justify-self-center sm:w-[50%] md:w-[60%]'}>
+            className={`${styles.contentTop} mb-[5rem] text-20 sm:text-32 md:text-40 leading-[165%] flex justify-center md:justify-self-center sm:w-[50%] md:w-[60%]`}>
           <div className={'flex flex-wrap justify-center w-full'}>
             <p>Transforming</p>
             <MorvaText>landscapes</MorvaText>

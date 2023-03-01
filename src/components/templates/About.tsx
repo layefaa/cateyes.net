@@ -7,7 +7,7 @@ import {motion} from "framer-motion";
 
 const About = () => {
   return (
-      <div className={`mt-[6rem] md:mt-[7rem] h-full flex flex-col sm:flex-row aboutXPadding`}>
+      <div className={`mt-[4rem] md:mt-[12rem] h-full flex flex-col sm:flex-row aboutXPadding`}>
         <motion.div initial={'closed'}
                     whileInView={'open'}
                     viewport={{once: true}}

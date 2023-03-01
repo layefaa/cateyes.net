@@ -76,7 +76,7 @@ export const childVariants = {
     }
   },
   closed: {
-    y: 50,
+    y: 25,
     opacity: 0,
     transition: {
       y: {stiffness: 1000}
@@ -132,7 +132,7 @@ export const slideIn = (type: string, delay: number, duration: number, direction
 
 export const textVariant = (delay: number) => ({
   hidden: {
-    y: -50,
+    y: -25,
     opacity: 0,
   },
   show: {
