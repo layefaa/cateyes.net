@@ -89,7 +89,7 @@ export const parentVariants2 = (delay: number) => ({
         transition: {staggerChildren: 0.3, delayChildren: delay}
       },
       closed: {
-        transition: {staggerChildren: 0.1, staggerDirection: -1}
+        // transition: {staggerChildren: 0.1, staggerDirection: -1}
       }
     }
 );
