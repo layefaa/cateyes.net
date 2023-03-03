@@ -29,7 +29,8 @@ module.exports = {
 				'ce-secondary-black': '#171717',
 				'ce-primary-white': 'hsl(0, 0%, 75%)',
 				'ce-secondary-white': 'hsl(0, 0%, 100%)',
-				'ce-tertiary-white': 'hsl(0, 0%, 50%)'
+				'ce-tertiary-white': 'hsl(0, 0%, 50%)',
+				'ce-primary-white2': 'hsl(0, 0%, 80%)'
 			},
 			spacing: {
 				'24': '2.4rem',

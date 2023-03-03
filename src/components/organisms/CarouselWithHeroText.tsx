@@ -22,8 +22,8 @@ const CarouselWithHeroText = () => {
           <div className={'flex flex-wrap justify-center w-full'}>
             <p>Transforming</p>
             <MorvaText>landscapes</MorvaText>
-            <p>into lasting
-            </p><p className={'px-[0.5rem]'}> memories</p>
+            <p>into lasting</p>
+            <p className={'px-[0.5rem]'}> memories</p>
           </div>
         </motion.div>
         <div className={'w-full'}>

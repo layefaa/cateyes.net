@@ -15,6 +15,9 @@ const styles = {
 
   spaceBetweenSections: 'gap-[5rem] md:gap-[15rem] xl:gap-[20rem]',
 
+  headerText: 'text-24 sm:text-32 md:text-40 lg:text-48 leading-[165%]',
+  headerBottom: 'mb-[2rem]'
+
 };
 
 export default styles;

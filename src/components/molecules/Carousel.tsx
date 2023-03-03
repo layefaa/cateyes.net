@@ -6,8 +6,7 @@ import SwiperCore, {Autoplay, EffectFlip, Pagination} from "swiper";
 import {CarouselSlideContainer} from "@/components/atoms";
 import {CarouselPagination} from "@/utils/CarouselPagination";
 
-// @ts-ignore
-const Carousel = ({images}) => {
+const Carousel = ({images}: { images: Array<object> }) => {
       SwiperCore.use([EffectFlip, Pagination, Autoplay])
       return (
           <Swiper

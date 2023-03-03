@@ -4,13 +4,14 @@ import {footerHeader, menuSubHeader} from "@/constants";
 import {ContactUsButton} from "@/components/molecules";
 import {motion} from "framer-motion";
 import {childVariants2} from "@/utils/motion";
+import styles from "@/styles";
 
 const CreateMemoriesTogether = () => {
   return (
       <div className={'flex items-center flex-col w-full'}>
         <MorvaText>
           <motion.div variants={childVariants2} className={' flex justify-center '}>
-            <p className={'text-24 md:text-48 text-center w-full w-[70%] md:w-full leading-[165%]'}>
+            <p className={`${styles.headerText} text-center w-full w-[70%] md:w-full`}>
               {footerHeader}
             </p>
           </motion.div>
