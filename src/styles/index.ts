@@ -6,7 +6,7 @@ const styles = {
   containerPaddingX: 'px-24 sm:px-40 md:px-48 lg:px-80',
 
   contentTop: 'mt-[6rem] md:mt-[7rem]',
-  sectionPaddingY: 'my-[8rem] sm:my-[9rem] md:my-[10rem]',
+  sectionPaddingY: 'my-[4rem] lg:my-[6rem]',
   sectionHeader: 'text-24 sm:text-32 md:text-48',
   sectionParagraph: 'leading-[165%] text-14 md:text-20',
   sectionMarginBetweenContent: 'my-[2rem] mt-[1.5rem] xl:my-[4rem] xl:mt-[2rem]',

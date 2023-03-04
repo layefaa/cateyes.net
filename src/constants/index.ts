@@ -28,11 +28,11 @@ export const footerRoutes = [
 ]
 
 export const tabsData = [
-  {id: 1, title: 'All', content: 'All'},
-  {id: 2, title: 'Wedding Photography', content: 'Wedding Photography'},
-  {id: 3, title: 'Portrait Photography', content: 'Portrait Photography'},
-  {id: 4, title: 'Landscape Photography', content: 'Landscape Photography'},
-  {id: 5, title: 'Street Photography', content: 'Street Photography'},
+  {id: 1, title: 'All', content: ''},
+  {id: 2, title: 'Wedding Photography', content: 'wedd-p'},
+  {id: 3, title: 'Portrait Photography', content: 'port-p'},
+  {id: 4, title: 'Landscape Photography', content: 'land-p'},
+  {id: 5, title: 'Street Photography', content: 'street-p'},
 ]
 
 export const menuHeader = 'let’s works together'
@@ -68,3 +68,25 @@ export const myWorkParagraph = 'View and be inspired'
 
 export const worksHeader = 'Capturing Life\'s Precious Moments'
 export const worksSubHeader = 'Capturing memories through the lens'
+
+export const galleryImages = [
+  {
+    content: 'port-p',
+    url: '/slides/slide2.png'
+  },
+  {url: '/slides/slide2.png', content: 'land-p'},
+  {url: '/slides/slide1.png', content: 'land-p'},
+  {url: '/slides/slide3.png', content: 'port-p'},
+  {url: '/img/Rectangle70.jpg', content: 'wedd-p'},
+  {url: '/img/Rectange1.jpg', content: 'wedd-p'},
+  {url: '/img/Rectangle57.jpg', content: 'wedd-p'},
+  {url: '/img/Rectangle61.jpg', content: 'street-p'},
+  {url: '/img/Rectangle62.jpg', content: 'port-p'},
+  {url: '/img/Rectangle63.jpg', content: 'street-p'},
+  {url: '/img/Rectangle64.jpg', content: 'wedd-p'},
+  {url: '/img/Rectangle65.jpg', content: 'street-p'},
+  {url: '/img/Rectangle67.jpg', content: 'wedd-p'},
+  {url: '/img/Rectangle68.jpg', content: 'land-p'},
+  {url: '/img/Rectangle69.jpg', content: 'wedd-p'},
+
+]

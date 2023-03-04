@@ -81,3 +81,12 @@ h6 {
 .gradient {
     background: linear-gradient(80.5deg, #000000 1.04%, rgba(0, 0, 0, 0) 107.56%);
 }
+
+.works-gallery-image {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.visible {
+    opacity: 1;
+}

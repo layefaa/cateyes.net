@@ -6,7 +6,7 @@ import {Button} from "@/components/atoms";
 const ContactUsButton = () => {
   const router = useRouter();
   return (
-      <Button onClick={() => router.push('/contact')} label={'Send us a message'}/>
+      <Button type={'button'} onClick={() => router.push('/contact')} label={'Send us a message'}/>
   );
 };
 

@@ -10,15 +10,16 @@ type Tab = {
 
 type TabsProps = {
   tabsData: Tab[];
-  activeTab: number;
-  handleClick: (id: number) => void;
+  activeTab: string;
+  handleClick: (id: string) => void;
 };
 const Tabs = ({tabsData, activeTab, handleClick}: Required<TabsProps>) => {
   return (
       <div className={'w-[90rem] flex gap-[1rem] mx-auto'}>
         {
           tabsData.map((tab) => (
-              <Button active={tab.id === activeTab} key={tab.id} onClick={() => handleClick(tab.id)} type={'tab'}
+              <Button active={tab.content === activeTab} key={tab.id} onClick={() => handleClick(tab.content)}
+                      type={'tab'}
                       label={tab.title}/>
           ))}
       </div>

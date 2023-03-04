@@ -49,7 +49,7 @@ const ShortWorks = () => {
               viewport={{once: true}}
               variants={zoomIn(1.1, .5)}
               className={` w-full sm:col-span-5 sm:row-span-2 sm:col-start-8 sm:row-start-5 flex items-center aboutLInnerPadding`}>
-            <WorksButton label={'See All'}/>
+            <WorksButton  label={'See All'}/>
           </motion.div>
         </div>
       </div>
