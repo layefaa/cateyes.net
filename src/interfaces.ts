@@ -5,12 +5,20 @@ export interface IMenuContext {
 
 export interface ISocialIcon {
   strokeColor: string,
-  dir?:string
+  dir?: string
+}
+
+
+enum buttonType {
+  button,
+  tabs
 }
 
 export interface IButton {
   label: string,
-  onClick?: () => void
+  onClick?: () => void,
+  type: 'button' | 'tab',
+  active?: boolean
 }
 
 export interface ILink {

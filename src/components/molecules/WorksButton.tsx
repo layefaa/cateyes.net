@@ -7,7 +7,7 @@ import {IButton} from "@/interfaces";
 const WorksButton = ({label}: IButton) => {
   const router = useRouter();
   return (
-      <Button onClick={() => router.push('/work')} label={label}/>
+      <Button onClick={() => router.push('/works')} label={label}/>
   );
 };
 

@@ -7,4 +7,5 @@ export {default as AboutButton} from './AboutButton'
 export {default as WorksButton} from './WorksButton'
 export {default as Carousel} from './Carousel'
 export {default as CarouselImages} from './CarouselImages'
+export {default as Tabs} from './Tabs'
 

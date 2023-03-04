@@ -7,7 +7,7 @@ export const routes = [
     route: '/about'
   }, {
     name: 'Work',
-    route: '/work'
+    route: '/works'
   }, {
     name: 'Contact',
     route: '/contact'
@@ -20,14 +20,22 @@ export const footerRoutes = [
     route: '/about'
   }, {
     name: 'Work',
-    route: '/work'
+    route: '/works'
   }, {
     name: 'Contact',
     route: '/contact'
   }
 ]
 
-export const menuHeader = 'let’s work together'
+export const tabsData = [
+  {id: 1, title: 'All', content: 'All'},
+  {id: 2, title: 'Wedding Photography', content: 'Wedding Photography'},
+  {id: 3, title: 'Portrait Photography', content: 'Portrait Photography'},
+  {id: 4, title: 'Landscape Photography', content: 'Landscape Photography'},
+  {id: 5, title: 'Street Photography', content: 'Street Photography'},
+]
+
+export const menuHeader = 'let’s works together'
 
 export const menuSubHeader = 'Tell your story through pixels'
 
