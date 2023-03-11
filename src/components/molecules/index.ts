@@ -8,4 +8,6 @@ export {default as WorksButton} from './WorksButton'
 export {default as Carousel} from './Carousel'
 export {default as CarouselImages} from './CarouselImages'
 export {default as Tabs} from './Tabs'
+export {default as InputField} from './InputField'
+export {default as TextAreaField} from './TextAreaField'
 

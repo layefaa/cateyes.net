@@ -1,6 +1,6 @@
 'use client'
 import {MorvaText} from "@/components/atoms";
-import {footerHeader, menuSubHeader} from "@/constants";
+import {letsCreateMemories, menuSubHeader} from "@/constants";
 import {ContactUsButton} from "@/components/molecules";
 import {motion} from "framer-motion";
 import {childVariants2} from "@/utils/motion";
@@ -12,7 +12,7 @@ const CreateMemoriesTogether = () => {
         <MorvaText>
           <motion.div variants={childVariants2} className={' flex justify-center '}>
             <p className={`${styles.headerText} text-center w-full w-[70%] md:w-full`}>
-              {footerHeader}
+              {letsCreateMemories}
             </p>
           </motion.div>
         </MorvaText>

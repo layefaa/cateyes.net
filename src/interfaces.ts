@@ -25,3 +25,9 @@ export interface ILink {
   name: string,
   route: string
 }
+
+export interface IInput {
+  label: string,
+  type?: string,
+  placeholder?: string
+}
