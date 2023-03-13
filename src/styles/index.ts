@@ -16,7 +16,7 @@ const styles = {
   spaceBetweenSections: 'gap-[5rem] md:gap-[15rem] xl:gap-[20rem]',
 
   headerText: 'text-24 sm:text-32 md:text-40 lg:text-48 leading-[165%]',
-  // headerBottom: 'mb-[2rem]'
+  headerBottom: 'mb-[2rem]',
 
   buttonStyle: 'px-[1.6rem] py-[1rem] font-[400] text-14 ',
   inputStyle: 'px-[1.6rem] py-[1.5rem] font-[400] text-16 placeholder:text-16 placeholder:text-ce-tertiary-white outline-none relative rounded bg-transparent overflow-hidden  text-ce-secondary-white border-ce-tertiary-white focus:border-ce-primary-white border inline-flex rounded-[5px]'
