@@ -16,10 +16,10 @@ const ContactUs = () => {
                     variants={parentVariants2(1)}
                     className={'aboutRInnerPadding mt-0 sm:mt-[4rem] lg:mt-[10rem] sm:w-2/5'}>
           <MorvaText>
-            <motion.h1 variants={childVariants2} className={`${styles.sectionHeader}`}>{letsCreateMemories}</motion.h1>
+            <motion.h1 variants={childVariants2} className={`${styles.sectionHeader} leading-[165%]`}>{letsCreateMemories}</motion.h1>
           </MorvaText>
           <motion.p variants={childVariants2}
-                    className={`${styles.sectionParagraph} ${styles.sectionMarginBetweenContent}`}> {contactUsParagraph}</motion.p>
+                    className={`${styles.sectionParagraph} ${styles.sectionMarginBetweenContent} `}> {contactUsParagraph}</motion.p>
         </motion.div>
         <motion.div initial="hidden"
                     whileInView="show"

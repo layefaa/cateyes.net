@@ -11,7 +11,7 @@ const CreateMemoriesTogether = () => {
       <div className={'flex items-center flex-col w-full'}>
         <MorvaText>
           <motion.div variants={childVariants2} className={' flex justify-center '}>
-            <p className={`${styles.headerText} text-center w-full w-[70%] md:w-full`}>
+            <p className={`${styles.headerText} leading-[165%] text-center w-full w-[70%] md:w-full`}>
               {letsCreateMemories}
             </p>
           </motion.div>
