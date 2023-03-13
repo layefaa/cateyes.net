@@ -27,6 +27,7 @@ module.exports = {
 			colors: {
 				'ce-primary-black': '#0E0E0E',
 				'ce-secondary-black': '#171717',
+				'ce-tertiary-black': '#1A1A1A',
 				'ce-primary-white': 'hsl(0, 0%, 75%)',
 				'ce-secondary-white': 'hsl(0, 0%, 100%)',
 				'ce-tertiary-white': 'hsl(0, 0%, 50%)',

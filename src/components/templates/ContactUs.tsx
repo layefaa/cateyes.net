@@ -5,6 +5,7 @@ import {childVariants2, fadeIn, parentVariants2} from "@/utils/motion";
 import {MorvaText, ProfileImage} from "@/components/atoms";
 import styles from "@/styles";
 import {contactUsParagraph, letsCreateMemories} from "@/constants";
+import {ContactUsForm} from "@/components/organisms";
 
 const ContactUs = () => {
   return (
@@ -24,8 +25,8 @@ const ContactUs = () => {
                     whileInView="show"
                     viewport={{once: true}}
                     variants={fadeIn('left', 'tween', 1.4, .5)}
-                    className={'w-full sm:w-3/5 sm:h-full md:h-[70%] bg-red-800'}>
-          <ProfileImage url={'/img/profile.jpg'}/>
+                    className={'w-full sm:w-3/5'}>
+          <ContactUsForm/>
         </motion.div>
       </div>
   );

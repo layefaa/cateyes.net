@@ -1,13 +1,14 @@
 import React from 'react';
 import {IButton} from "@/interfaces";
+import styles from "@/styles";
 
-const buttonStyle = 'px-[1.6rem] py-[1rem] font-[400] text-14  '
+
 const Button = ({label, onClick, type = 'button', active}: IButton) => {
   switch (type) {
     case 'button':
       return (
           <button onClick={onClick}
-                  className={`${buttonStyle} relative rounded group overflow-hidden  text-ce-secondary-white border-ce-secondary-white border inline-flex rounded-[5px] items-center`}>
+                  className={`${styles.buttonStyle} relative rounded group overflow-hidden text-ce-secondary-white border-ce-secondary-white border inline-flex rounded-[5px] items-center`}>
         <span
             className="absolute top-0 left-0 flex w-0 h-full mb-0 transition-all duration-500 ease-out transform translate-x-0 bg-ce-secondary-white group-hover:w-full "></span>
             <span className="relative group-hover:text-ce-primary-black"> {label}</span>
@@ -23,7 +24,7 @@ const Button = ({label, onClick, type = 'button', active}: IButton) => {
     case 'tab':
       return (
           <button
-              className={`${active ? 'bg-ce-secondary-white text-ce-primary-black' : 'bg-transparent text-ce-secondary-white'} ${buttonStyle} transition-all duration-500 ease-in text-16 font-[500]`}
+              className={`${active ? 'bg-ce-secondary-white text-ce-primary-black' : 'bg-transparent text-ce-secondary-white'} ${styles.buttonStyle} transition-all duration-500 ease-in text-16 font-[500]`}
               onClick={onClick}
           >
             {label}
