@@ -17,7 +17,7 @@ enum buttonType {
 export interface IButton {
   label: string,
   onClick?: () => void,
-  type: 'button' | 'tab',
+  type: 'button' | 'tab' | 'submit',
   active?: boolean
 }
 

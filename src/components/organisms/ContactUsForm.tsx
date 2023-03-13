@@ -11,8 +11,8 @@ const ContactUsForm = () => {
         </div>
         <InputField label={'Email'} placeholder={'e.g johndoe@mail.com'} type={'email'}/>
         <TextAreaField label={'Message'} placeholder={'e.g I want to schedule an appointment for a shoot......'}/>
-        <div>
-          <Button label={'Send'} type={'button'}/>
+        <div className={'flex w-full sm:justify-center'}>
+          <Button label={'Submit'} type={'submit'}/>
         </div>
 
       </div>
