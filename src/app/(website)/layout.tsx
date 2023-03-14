@@ -16,7 +16,8 @@ export default function WebsiteLayout({children,}: { children: React.ReactNode }
       <body>
       <div className={` ${quickSand.className} ${styles.baseFontSize} font-[300]`}>
         <Header/>
-        <main className={`${styles.containerPaddingX} pt-[7.5rem] md:pt-[8rem] flex flex-col ${styles.spaceBetweenSections}`}>
+        <main
+            className={`${styles.containerPaddingX} pt-[7.5rem] md:pt-[8rem] flex flex-col ${styles.spaceBetweenSections}`}>
           {children}
         </main>
         <Footer/>

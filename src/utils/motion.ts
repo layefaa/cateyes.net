@@ -1,7 +1,7 @@
 export const navVariants = {
   hidden: {
     opacity: 0,
-    y: -50,
+    y: -20,
     transition: {
       type: 'tween',
       // stiffness: 300,
@@ -40,7 +40,7 @@ export const navBoxVariants = {
 export const footerVariants = {
   hidden: {
     opacity: 0,
-    y: 50,
+    y: 30,
     transition: {
       type: 'tween',
       stiffness: 300,
@@ -146,20 +146,20 @@ export const textVariant = (delay: number) => ({
   },
 });
 
-export const textVariant2 = {
-  hidden: {
-    opacity: 0,
-    y: 20,
-  },
-  show: {
-    opacity: 1,
-    y: 0,
-    transition: {
-      type: 'tween',
-      ease: 'easeIn',
-    },
-  },
-};
+// export const textVariant2 = {
+//   hidden: {
+//     opacity: 0,
+//     y: 20,
+//   },
+//   show: {
+//     opacity: 1,
+//     y: 0,
+//     transition: {
+//       type: 'tween',
+//       ease: 'easeIn',
+//     },
+//   },
+// };
 
 export const fadeIn = (direction: string, type: string, delay: number, duration: number) => ({
   hidden: {

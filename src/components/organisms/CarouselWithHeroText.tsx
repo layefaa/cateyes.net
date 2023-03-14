@@ -17,8 +17,8 @@ const CarouselWithHeroText = () => {
             initial="hidden"
             whileInView="show"
             viewport={{once: true}}
-            variants={textVariant(.8)}
-            className={`${styles.contentTop} mb-[5rem] text-20 sm:text-32 md:text-40 leading-[165%] flex justify-center md:justify-self-center sm:w-[50%] md:w-[60%]`}>
+            variants={textVariant(.5)}
+            className={`${styles.contentTop} mb-[5rem] text-20 md:text-32 lg:text-40 leading-[165%] flex justify-center md:justify-self-center sm:w-[50%] md:w-[60%]`}>
           <div className={'flex flex-wrap justify-center w-full'}>
             <p>Transforming</p>
             <MorvaText>landscapes</MorvaText>
