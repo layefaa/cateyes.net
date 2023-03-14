@@ -12,7 +12,7 @@ const ShortAbout = () => {
         <motion.div initial={'closed'}
                     whileInView={'open'}
                     viewport={{once: true}}
-                    variants={parentVariants2(1)}
+                    variants={parentVariants2(.5)}
                     className={'aboutRInnerPadding mt-0 sm:mt-[4rem] lg:mt-[10rem] sm:w-1/2'}>
           <MorvaText>
             <motion.h1 variants={childVariants2} className={`${styles.sectionHeader}`}>{aboutGreeting}</motion.h1>

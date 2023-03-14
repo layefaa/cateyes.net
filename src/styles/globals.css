@@ -67,7 +67,7 @@ h6 {
 }
 
 .aboutXPadding {
-    @apply px-0 lg:px-80
+    @apply px-0 lg:px-[4rem] xl:px-[8rem]
 }
 
 .aboutRInnerPadding {

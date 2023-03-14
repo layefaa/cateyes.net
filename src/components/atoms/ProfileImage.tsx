@@ -3,7 +3,7 @@ import Image from "next/image"
 
 const ProfileImage = ({url}: { url: string }) => {
   return (
-      <div className={'relative h-[40rem] lg:h-[40vw] w-full'}>
+      <div className={'relative w-full aspect-[0.75] md:aspect-[0.94] md:h-full '}>
         <Image src={url} alt={''} fill
                sizes="100vw"
                style={{

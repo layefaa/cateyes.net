@@ -102,7 +102,7 @@ export const childVariants2 = {
     }
   },
   closed: {
-    y: 100,
+    y: 30,
     opacity: 0,
     transition: {
       y: {stiffness: 1000}
