@@ -1,6 +1,6 @@
 'use client'
 import {MorvaText, ProfileImage} from "@/components/atoms";
-import {aboutGreeting, aboutYouShort} from "@/constants";
+import {aboutGreeting, aboutYou} from "@/constants";
 import styles from "@/styles";
 import {AboutButton} from "@/components/molecules";
 import {childVariants2, fadeIn, parentVariants2} from "@/utils/motion";
@@ -18,7 +18,7 @@ const ShortAbout = () => {
             <motion.h1 variants={childVariants2} className={`${styles.sectionHeader}`}>{aboutGreeting}</motion.h1>
           </MorvaText>
           <motion.p variants={childVariants2}
-                    className={`${styles.sectionParagraph} ${styles.sectionMarginBetweenContent}`}> {aboutYouShort}</motion.p>
+                    className={`${styles.sectionParagraph} ${styles.sectionMarginBetweenContent} line-clamp-3`}> {aboutYou}</motion.p>
           <motion.div variants={childVariants2} className={'my-[4rem]'}>
             <AboutButton label={"Learn More"}/>
           </motion.div>
