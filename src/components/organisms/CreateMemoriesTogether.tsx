@@ -16,7 +16,7 @@ const CreateMemoriesTogether = () => {
             </p>
           </motion.div>
         </MorvaText>
-        <motion.div variants={childVariants2} className={'mt-[2rem] mb-[4rem] md:mb-[6rem]'}>
+        <motion.div variants={childVariants2} className={'mt-[2rem] mb-[4rem] lg:mb-[6rem]'}>
           <p>{menuSubHeader}</p>
         </motion.div>
         <motion.div variants={childVariants2}>
