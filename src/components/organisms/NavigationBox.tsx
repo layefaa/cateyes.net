@@ -5,7 +5,7 @@ import {useMenuContext} from "@/context/MenuContext";
 import {ContactUsButton, Links} from "@/components/molecules";
 import {MorvaText} from "@/components/atoms";
 import {email, menuHeader, menuSubHeader, phone} from "@/constants";
-import {AnimatePresence, motion} from "framer-motion"
+import {AnimatePresence, m} from "framer-motion"
 import {childVariants, navBoxVariants, parentVariants} from "@/utils/motion";
 
 
@@ -16,7 +16,7 @@ const NavigationBox = () => {
   return (
       <AnimatePresence>
         {isOpen && (
-            <motion.div
+            <m.div
                 initial="closed"
                 animate="open"
                 exit="closed"
@@ -25,28 +25,28 @@ const NavigationBox = () => {
               <div className={'h-[55%] pt-[20%] md:px-[8rem] md:pt-0 md:h-[50%] md:flex md:items-centers'}>
                 <Links/>
               </div>
-              <motion.div
+              <m.div
                   variants={parentVariants(1)}
                   className={`h-[45%] pt-[25%] md:h-[50%] md:pt-[5%] text-12 md:text-20 flex flex-col items-center md:justify-start`}>
                 <MorvaText>
-                  <motion.p variants={childVariants}
-                            className={`text-20 sm:text-24 md:text-32 `}>{menuHeader}</motion.p>
+                  <m.p variants={childVariants}
+                            className={`text-20 sm:text-24 md:text-32 `}>{menuHeader}</m.p>
                 </MorvaText>
-                <motion.p variants={childVariants} className={'font-light py-10 md:py-28 '}>{menuSubHeader}</motion.p>
-                <motion.div variants={childVariants}
+                <m.p variants={childVariants} className={'font-light py-10 md:py-28 '}>{menuSubHeader}</m.p>
+                <m.div variants={childVariants}
                             className={`text-center text-ce-secondary-white font-semibold  pb-10 md:pb-28`}>
                   <p>{email}</p>
                   <p className={`mt-4 md:mt-6`}>{phone}</p>
-                </motion.div>
-                <motion.div
+                </m.div>
+                <m.div
                     variants={childVariants}
                 >
 
                   <ContactUsButton/>
-                </motion.div>
+                </m.div>
 
-              </motion.div>
-            </motion.div>
+              </m.div>
+            </m.div>
         )}
       </AnimatePresence>
 

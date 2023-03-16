@@ -2,7 +2,7 @@ import React from 'react';
 import cateyes from '../../../public/cateyes.svg'
 import Image from "next/image";
 
-const Logo: React.FC = () => {
+const Logo = () => {
   return (
       <Image src={cateyes} alt={'Cateyes'} fill priority/>
   );

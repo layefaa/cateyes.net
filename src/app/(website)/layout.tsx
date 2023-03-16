@@ -2,6 +2,7 @@ import React from 'react'
 import styles from "@/styles";
 import {Quicksand} from '@next/font/google';
 import {Footer, Header} from "@/components/templates";
+import {domAnimation, LazyMotion} from "framer-motion"
 
 
 const quickSand = Quicksand({
@@ -18,7 +19,9 @@ export default function WebsiteLayout({children,}: { children: React.ReactNode }
         <Header/>
         <main
             className={`${styles.containerPaddingX} pt-[7.5rem] md:pt-[8rem] flex flex-col ${styles.spaceBetweenSections}`}>
-          {children}
+          <LazyMotion features={domAnimation}>
+            {children}
+          </LazyMotion>
         </main>
         <Footer/>
       </div>

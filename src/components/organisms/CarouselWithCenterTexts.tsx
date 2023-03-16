@@ -1,6 +1,6 @@
 'use client'
 import React from 'react';
-import {motion} from "framer-motion";
+import {m} from "framer-motion";
 import {fadeIn} from "@/utils/motion";
 import {Carousel} from "@/components/molecules";
 import {homeCarousel, worksHeader, worksSubHeader} from "@/constants";
@@ -10,7 +10,7 @@ import {MorvaText, Overlay} from "@/components/atoms";
 const CarouselWithCenterTexts = () => {
   return (
       <div className={`${styles.contentTop} w-full relative`}>
-        <motion.div
+        <m.div
             initial="hidden"
             whileInView="show"
             viewport={{once: true}}
@@ -26,7 +26,7 @@ const CarouselWithCenterTexts = () => {
           </div>
           <Overlay/>
           <Carousel images={homeCarousel}/>
-        </motion.div>
+        </m.div>
 
       </div>
   );

@@ -3,13 +3,13 @@ import {MorvaText} from "@/components/atoms";
 import styles from "@/styles";
 import {homeCarousel, myWork, myWorkParagraph} from "@/constants";
 import {CarouselImages, WorksButton} from "@/components/molecules";
-import {motion} from "framer-motion";
+import {m} from "framer-motion";
 import {fadeIn, textVariant, zoomIn} from "@/utils/motion";
 
 const ShortWorks = () => {
   return (
       <div className={`h-full flex flex-col`}>
-        <motion.div
+        <m.div
             initial="hidden"
             whileInView="show"
             viewport={{once: true}}
@@ -19,38 +19,38 @@ const ShortWorks = () => {
             <h1 className={`${styles.sectionHeader}`}>{myWork}</h1>
           </MorvaText>
           <p className={`${styles.sectionParagraph} ${styles.sectionMarginBetweenContent}  sm:-ml-[2rem]`}> {myWorkParagraph}</p>
-        </motion.div>
+        </m.div>
         <div
             className={`w-full flex flex-col  sm:grid sm:aspect-[1.757] gap-24 grid-cols-12 grid-rows-6`}>
-          <motion.div initial="hidden"
+          <m.div initial="hidden"
                       whileInView="show"
                       viewport={{once: true}}
                       variants={fadeIn('right', 'tween', .6, .5)}
                       className=" w-full sm:col-span-7 sm:row-span-3 flex h-full">
             <CarouselImages images={homeCarousel}/>
-          </motion.div>
-          <motion.div initial="hidden"
+          </m.div>
+          <m.div initial="hidden"
                       whileInView="show"
                       viewport={{once: true}}
                       variants={fadeIn('right', 'tween', .75, .5)}
                       className=" w-full sm:col-span-7 sm:row-span-3  flex h-full ">
             <CarouselImages images={homeCarousel}/>
-          </motion.div>
-          <motion.div initial="hidden"
+          </m.div>
+          <m.div initial="hidden"
                       whileInView="show"
                       viewport={{once: true}}
                       variants={fadeIn('left', 'tween', 1, .5)}
                       className=" w-full sm:col-span-5 sm:row-span-4 sm:col-start-8 sm:row-start-1 flex h-full">
             <CarouselImages images={homeCarousel}/>
-          </motion.div>
-          <motion.div
+          </m.div>
+          <m.div
               initial="hidden"
               whileInView="show"
               viewport={{once: true}}
               variants={fadeIn('left', 'tween', 1.1, .5)}
               className={` w-full sm:col-span-5 sm:row-span-2 sm:col-start-8 sm:row-start-5 flex justify-center sm:justify-start items-center aboutLInnerPadding mt-[1rem] sm:mt-0 `}>
             <WorksButton label={'See All'}/>
-          </motion.div>
+          </m.div>
         </div>
       </div>
   );

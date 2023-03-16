@@ -4,13 +4,13 @@ import {Logo} from "@/components/atoms";
 import {Menu} from "@/components/molecules";
 import {FollowEffect} from "@/components/organisms";
 import Link from "next/link";
-import {motion} from 'framer-motion';
+import {m} from 'framer-motion';
 import {navVariants} from "@/utils/motion";
 
 
 const Navbar = () => {
   return (
-      <motion.nav
+      <m.nav
           variants={navVariants}
           initial="hidden"
           whileInView="show"
@@ -26,7 +26,7 @@ const Navbar = () => {
           <Menu/>
         </div>
 
-      </motion.nav>
+      </m.nav>
   );
 };
 

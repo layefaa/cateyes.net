@@ -3,7 +3,7 @@ import React from 'react';
 import {Carousel} from "@/components/molecules";
 import {MorvaText} from "@/components/atoms";
 import {homeCarousel} from "@/constants";
-import {motion} from "framer-motion";
+import {m} from "framer-motion";
 import {fadeIn, textVariant} from "@/utils/motion";
 import styles from "@/styles";
 
@@ -13,7 +13,7 @@ const CarouselWithHeroText = () => {
   return (
       <div
           className={'flex flex-col items-center'}>
-        <motion.div
+        <m.div
             initial="hidden"
             whileInView="show"
             viewport={{once: true}}
@@ -25,18 +25,17 @@ const CarouselWithHeroText = () => {
             <p>into lasting</p>
             <p className={'px-[0.5rem]'}> memories</p>
           </div>
-        </motion.div>
+        </m.div>
         <div className={'w-full'}>
-          <motion.div
+          <m.div
               initial="hidden"
               whileInView="show"
               viewport={{once: true}}
               className={'w-full'}
               variants={fadeIn('left', 'spring', 1, .5)}
           >
-            {/*@ts-ignore*/}
             <Carousel images={homeCarousel}/>
-          </motion.div>
+          </m.div>
 
         </div>
 

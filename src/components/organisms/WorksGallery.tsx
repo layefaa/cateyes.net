@@ -1,6 +1,6 @@
 'use client'
 import React, {useState} from 'react';
-import {motion} from 'framer-motion';
+import {m} from 'framer-motion';
 import {galleryImages, tabsData} from "@/constants";
 import {Tabs} from "@/components/molecules";
 import styles from "@/styles";
@@ -28,7 +28,7 @@ const WorksGallery = () => {
           {
             filteredImages.map((img, index) => {
               return (
-                  <motion.img
+                  <m.img
                       key={index}
                       src={img.url}
                       alt=""
