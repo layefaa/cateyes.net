@@ -32,6 +32,7 @@ const WorksGallery = () => {
                       key={index}
                       src={img.url}
                       alt=""
+                      loading={'lazy'}
                       initial={{opacity: 0, y: 50}}
                       animate={{opacity: 1, y: 0}}
                       transition={transition}
