@@ -1,6 +1,6 @@
 'use client'
 import React from 'react';
-import SwiperCore, {Autoplay, EffectFade} from "swiper";
+import SwiperCore, {Autoplay, EffectFlip, Lazy} from "swiper";
 import {Swiper, SwiperSlide} from "swiper/react";
 import {CarouselImageContainer} from "@/components/atoms";
 import 'swiper/css/effect-fade';
@@ -9,7 +9,7 @@ import 'swiper/css/effect-fade';
 
 // @ts-ignore
 const CarouselImages = ({images}) => {
-  SwiperCore.use([EffectFade, Autoplay])
+  SwiperCore.use([EffectFlip, Autoplay, Lazy])
   return (
       <Swiper
           autoplay
