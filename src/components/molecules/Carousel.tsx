@@ -1,6 +1,6 @@
 'use client'
 import React from "react";
-import "swiper/swiper-bundle.css";
+
 import {Swiper, SwiperSlide} from "swiper/react";
 import SwiperCore, {Autoplay, EffectFlip, Lazy, Pagination} from "swiper";
 import {CarouselSlideContainer} from "@/components/atoms";
@@ -16,7 +16,7 @@ const Carousel = ({images}: { images: Array<object> }) => {
               loop
               slidesPerView={1}
               pagination={CarouselPagination}
-              modules={[Pagination]}
+              modules={[Pagination,Lazy]}
           >
             {
               images.map((img: any) => {
