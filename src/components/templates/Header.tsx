@@ -1,9 +1,11 @@
-import React from 'react';
-import {Navbar, NavigationBox} from "@/components/organisms";
+import React, {lazy} from 'react';
+import {Navbar} from "@/components/organisms";
+
+const NavigationBox = lazy(() => import('@/components/organisms/NavigationBox'));
 
 const Header = () => {
   return (
-      <header className={`relative `}>
+      <header className={`relative`}>
         <Navbar/>
         <NavigationBox/>
       </header>

@@ -2,13 +2,13 @@
 import React from "react";
 
 import {Swiper, SwiperSlide} from "swiper/react";
-import SwiperCore, {Autoplay, EffectFlip, Lazy, Pagination} from "swiper";
+import SwiperCore, {Autoplay, EffectFlip, Pagination} from "swiper";
 import {CarouselSlideContainer} from "@/components/atoms";
 import {CarouselPagination} from "@/utils/CarouselPagination";
 
 const Carousel = ({images}: { images: Array<object> }) => {
       // const shouldSwiperUpdate = useCallback(() => false, []);
-      SwiperCore.use([EffectFlip, Pagination, Autoplay, Lazy])
+      SwiperCore.use([EffectFlip, Pagination, Autoplay])
       // @ts-ignore
       return (
           <Swiper
@@ -16,7 +16,7 @@ const Carousel = ({images}: { images: Array<object> }) => {
               loop
               slidesPerView={1}
               pagination={CarouselPagination}
-              modules={[Pagination,Lazy]}
+              modules={[Pagination]}
           >
             {
               images.map((img: any) => {

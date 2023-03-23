@@ -1,9 +1,11 @@
-import React from 'react'
+'use client'
+import {domAnimation, LazyMotion} from "framer-motion"
+import React, {lazy} from 'react'
 import styles from "@/styles";
 import {Quicksand} from '@next/font/google';
-import {Footer, Header} from "@/components/templates";
-import {domAnimation, LazyMotion} from "framer-motion"
+import {Header} from "@/components/templates";
 
+const Footer = lazy(() => import('@/components/templates/Footer'));
 
 const quickSand = Quicksand({
   weight: ['300', '400', '600'],
@@ -15,16 +17,17 @@ export default function WebsiteLayout({children,}: { children: React.ReactNode }
       <html lang="en">
       <head/>
       <body>
-      <div className={` ${quickSand.className} ${styles.baseFontSize} font-[300]`}>
-        <Header/>
-        <main
-            className={`${styles.containerPaddingX} pt-[7.5rem] md:pt-[8rem] flex flex-col ${styles.spaceBetweenSections}`}>
-          <LazyMotion features={domAnimation}>
+      <LazyMotion features={domAnimation}>
+        <div className={` ${quickSand.className} ${styles.baseFontSize} font-[300]`}>
+          <Header/>
+          <main
+              className={`${styles.containerPaddingX} pt-[7.5rem] md:pt-[8rem] flex flex-col ${styles.spaceBetweenSections}`}>
+
             {children}
-          </LazyMotion>
-        </main>
-        <Footer/>
-      </div>
+          </main>
+          <Footer/>
+        </div>
+      </LazyMotion>
       </body>
       </html>
   )
