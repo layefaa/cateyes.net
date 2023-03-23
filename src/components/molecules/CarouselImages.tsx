@@ -7,6 +7,7 @@ import 'swiper/css/effect-fade';
 // import {Carousel} from "@/components/molecules/index";
 
 
+
 // @ts-ignore
 const CarouselImages = ({images}) => {
   SwiperCore.use([EffectFlip, Autoplay,])

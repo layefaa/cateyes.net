@@ -1,16 +1,5 @@
 import React from 'react';
-import localFont from '@next/font/local'
-
-
-const morva = localFont({
-  src: [
-    {
-      path: '../../../public/fonts/MORVA.otf',
-    }, {
-      path: '../../../public/fonts/MORVA.ttf',
-    },
-  ],
-})
+import {morva} from "@/fonts";
 
 
 const MorvaText = ({children}: { children: React.ReactNode }) => {
