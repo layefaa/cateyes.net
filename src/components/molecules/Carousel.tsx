@@ -2,13 +2,14 @@
 import React from "react";
 
 import {Swiper, SwiperSlide} from "swiper/react";
-import SwiperCore, {Autoplay, EffectFlip, Pagination} from "swiper";
+import SwiperCore, {Autoplay, Pagination} from "swiper";
 import {CarouselSlideContainer} from "@/components/atoms";
 import {CarouselPagination} from "@/utils/CarouselPagination";
 
+
 const Carousel = ({images}: { images: Array<object> }) => {
       // const shouldSwiperUpdate = useCallback(() => false, []);
-      SwiperCore.use([EffectFlip, Pagination, Autoplay])
+      SwiperCore.use([Pagination, Autoplay])
       // @ts-ignore
       return (
           <Swiper

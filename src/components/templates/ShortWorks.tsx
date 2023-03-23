@@ -4,7 +4,7 @@ import styles from "@/styles";
 import {homeCarousel, myWork, myWorkParagraph} from "@/constants";
 import {CarouselImages, WorksButton} from "@/components/molecules";
 import {m} from "framer-motion";
-import {fadeIn, textVariant, zoomIn} from "@/utils/motion";
+import {fadeIn, textVariant} from "@/utils/motion";
 
 const ShortWorks = () => {
   return (
@@ -23,24 +23,24 @@ const ShortWorks = () => {
         <div
             className={`w-full flex flex-col  sm:grid sm:aspect-[1.757] gap-24 grid-cols-12 grid-rows-6`}>
           <m.div initial="hidden"
-                      whileInView="show"
-                      viewport={{once: true}}
-                      variants={fadeIn('right', 'tween', .6, .5)}
-                      className=" w-full sm:col-span-7 sm:row-span-3 flex h-full">
+                 whileInView="show"
+                 viewport={{once: true}}
+                 variants={fadeIn('right', 'tween', .6, .5)}
+                 className=" w-full sm:col-span-7 sm:row-span-3 flex h-full">
             <CarouselImages images={homeCarousel}/>
           </m.div>
           <m.div initial="hidden"
-                      whileInView="show"
-                      viewport={{once: true}}
-                      variants={fadeIn('right', 'tween', .75, .5)}
-                      className=" w-full sm:col-span-7 sm:row-span-3  flex h-full ">
+                 whileInView="show"
+                 viewport={{once: true}}
+                 variants={fadeIn('right', 'tween', .75, .5)}
+                 className=" w-full sm:col-span-7 sm:row-span-3  flex h-full ">
             <CarouselImages images={homeCarousel}/>
           </m.div>
           <m.div initial="hidden"
-                      whileInView="show"
-                      viewport={{once: true}}
-                      variants={fadeIn('left', 'tween', 1, .5)}
-                      className=" w-full sm:col-span-5 sm:row-span-4 sm:col-start-8 sm:row-start-1 flex h-full">
+                 whileInView="show"
+                 viewport={{once: true}}
+                 variants={fadeIn('left', 'tween', 1, .5)}
+                 className=" w-full sm:col-span-5 sm:row-span-4 sm:col-start-8 sm:row-start-1 flex h-full">
             <CarouselImages images={homeCarousel}/>
           </m.div>
           <m.div
