@@ -23,7 +23,7 @@ const WorksGallery = () => {
           <Tabs handleClick={handleClick} activeTab={activeTab} tabsData={tabsData}/>
         </div>
         <div
-            className="w-full p-5 pb-10 mx-auto mb-10 gap-[2rem] columns-1 sm:columns-3 space-y-[2.4rem]"
+            className="w-full p-5 pb-10 mx-auto mb-10 gap-[2rem] columns-1 sm:columns-2 lg:columns-3  space-y-[2.4rem]"
         >
           {
             filteredImages.map((img, index) => {

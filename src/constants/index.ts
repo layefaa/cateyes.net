@@ -45,7 +45,7 @@ export const phone = '09023546789'
 
 export const letsCreateMemories = 'let’s create memories together'
 
-export const contactUsParagraph = 'Join forces with us and let\'s work together to create something amazing'
+export const contactUsParagraph = 'Join forces with us and let\'s work together to create something amazing.'
 
 export const socials = {
   ig: 'https://instagram.com/cat_eyes_shots?igshid=YmMyMTA2M2Y=',
