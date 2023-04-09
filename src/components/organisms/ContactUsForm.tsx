@@ -6,7 +6,7 @@ import {Button} from "@/components/atoms";
 
 const ContactUsForm = () => {
   const call = async () => {
-    await fetch('/mail',
+    await fetch('/api/mail',
         {
           method: 'POST',
           body: JSON.stringify({hello: 'world'})

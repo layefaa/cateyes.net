@@ -1,5 +1,5 @@
-import {Quicksand} from "@next/font/google";
-import localFont from '@next/font/local'
+import {Quicksand} from "next/font/google";
+import localFont from "next/font/local"
 
 export const quickSand = Quicksand({
   weight: ['300', '400', '600'],
