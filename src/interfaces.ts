@@ -8,12 +8,6 @@ export interface ISocialIcon {
   dir?: string
 }
 
-
-enum buttonType {
-  button,
-  tabs
-}
-
 export interface IButton {
   label: string,
   onClick?: () => void,

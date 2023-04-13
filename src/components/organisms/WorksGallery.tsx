@@ -33,7 +33,7 @@ const WorksGallery = () => {
                       src={img.url}
                       alt=""
                       loading={'lazy'}
-                      initial={{opacity: 0, y: 50}}
+                      initial={{opacity: 0, y: -100}}
                       animate={{opacity: 1, y: 0}}
                       transition={transition}
                   />

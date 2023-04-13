@@ -5,7 +5,6 @@
 .swiper-pagination-bullet {
     width: 0.863rem;
     height: 0.863rem;
-
     background: rgba(255, 255, 255, 0.9);
     border-radius: 1.8rem;
 
@@ -20,5 +19,5 @@
     width: 3.022rem;
     height: 0.863rem;
     order: 0;
-    background: #FFFFFF;
+    background: #FFFFFF !important;
 }
