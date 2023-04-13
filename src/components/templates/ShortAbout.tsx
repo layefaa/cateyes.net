@@ -18,7 +18,7 @@ const ShortAbout = () => {
             <m.h1 variants={childVariants2} className={`${styles.sectionHeader}`}>{aboutGreeting}</m.h1>
           </MorvaText>
           <m.p variants={childVariants2}
-               className={`${styles.sectionParagraph} ${styles.sectionMarginBetweenContent} line-clamp-3`}> {aboutKelvin[0]}</m.p>
+               className={`${styles.sectionParagraph} ${styles.sectionMarginBetweenContent} line-clamp-4`}> {aboutKelvin[0]}</m.p>
           <m.div variants={childVariants2} className={'my-[4rem]'}>
             <AboutButton label={"Learn More"}/>
           </m.div>

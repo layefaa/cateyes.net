@@ -8,13 +8,14 @@ import {childVariants} from "@/utils/motion";
 import {ILink} from "@/interfaces"
 
 
-const NavLinks = ({route, name}: ILink) => {
+const NavLinks = ({route, name,clickEvent}: ILink) => {
   const currentRoute = usePathname();
 
   return (
       <MorvaText>
         <m.div variants={childVariants}>
           <Link
+              onClick={clickEvent}
               className={` leading-[165%] hover:text-ce-secondary-white text-32 md:text-36 lg:text-48 ${currentRoute === route ? "text-ce-secondary-white " : "text-ce-tertiary-white"}`}
               href={route}>
             {name}

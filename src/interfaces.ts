@@ -23,7 +23,8 @@ export interface IButton {
 
 export interface ILink {
   name: string,
-  route: string
+  route: string,
+  clickEvent?: ()=> void
 }
 
 export interface IInput {
