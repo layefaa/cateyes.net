@@ -14,7 +14,7 @@ const ContactUs = () => {
                     whileInView={'open'}
                     viewport={{once: true}}
                     variants={parentVariants2(1)}
-                    className={'mt-0 lg:mt-[4rem] pr-0 lg:pr-20 xl:pr-80 lg:w-2/5'}>
+                    className={'mt-0 lg:mt-[4rem] pr-0 lg:pr-20 xl:pr-80 lg:w-2/5 2xl:w-1/2'}>
           <MorvaText>
             <m.h1 variants={childVariants2} className={`${styles.sectionHeader} leading-[165%]`}>{letsCreateMemories}</m.h1>
           </MorvaText>
@@ -25,7 +25,7 @@ const ContactUs = () => {
                     whileInView="show"
                     viewport={{once: true}}
                     variants={fadeIn('left', 'tween', 1.4, .5)}
-                    className={'w-full lg:w-3/5'}>
+                    className={'w-full lg:w-3/5 2xl:w-1/2'}>
           <ContactUsForm/>
         </m.div>
       </div>

@@ -56,12 +56,20 @@ export const socials = {
 }
 
 export const homeCarousel = [
-  {url: '/slides/slide2.png'}, {url: '/slides/slide1.png'}, {url: '/slides/slide3.png'}
+  {url: '/images/19.webp'}, {url: '/images/20.webp'}, {url: '/images/29.webp'}, {url: '/images/31.webp'}
 ]
 
 export const aboutMeHeader = 'A Little About Me'
 export const aboutGreeting = 'Hello!'
-export const aboutYou = "As a photographer, my weekends are often filled with adventures and exploring new locations to capture beautiful images. Whether I'm home or wandering through the city, my camera is always by my side, ready to capture the world around me. In addition to my love of photography, I also enjoy cooking and creating delicious meals for my family and friends. On Sundays, I like to relax and unwind by practicing my guitar and singing, always striving to improve my musical skills. These hobbies bring me joy and help me to recharge after a busy week of shooting and editing."
+export const aboutKelvin = [
+  "Introducing the remarkable photographer whose work you are about to experience - a true artist with a passion for capturing beauty in all its forms. Meet Kelvin Oz, a skilled and creative photographer with a unique perspective on the world.",
+  "From a young age, Kelvin has been fascinated by the power of images to tell stories and convey emotion. As a photographer, Kelvin has honed this passion into a craft, developing a keen eye for composition, lighting, and detail.",
+  "What sets Kelvin apart as a photographer is their ability to find beauty and inspiration in unexpected places. Whether they're exploring the natural world or capturing the essence of a person or place, Kelvin brings a unique perspective and an unwavering commitment to authenticity to every shoot.",
+  "As a photographer, Kelvin has a remarkable ability to put their subjects at ease, creating a comfortable and relaxed atmosphere that allows for natural and authentic moments to be captured. Their warm and engaging personality shines through in every shoot, resulting in images that are not just beautiful but also deeply meaningful and emotive.",
+  "With a diverse portfolio that spans landscape photography, portraiture,events and still life, Kelvin is constantly pushing the boundaries of their craft, experimenting with new techniques and styles, and challenging themselves to grow as an artist.",
+  "Whether you're an art lover, a fellow photographer, or simply someone who appreciates beauty and creativity, Kelvin's portfolio is sure to inspire and captivate you. Explore their work today, and be prepared to see the world in a whole new light."
+
+]
 export const myWork = 'My Works'
 
 export const myWorkParagraph = 'View and be inspired'
@@ -70,23 +78,56 @@ export const worksHeader = 'Capturing Life\'s Precious Moments'
 export const worksSubHeader = 'Capturing memories through the lens'
 
 export const galleryImages = [
-  {
-    content: 'port-p',
-    url: '/slides/slide2.png'
-  },
-  {url: '/slides/slide2.png', content: 'land-p'},
-  {url: '/slides/slide1.png', content: 'land-p'},
-  {url: '/slides/slide3.png', content: 'port-p'},
-  {url: '/img/Rectangle70.jpg', content: 'wedd-p'},
-  {url: '/img/Rectange1.jpg', content: 'wedd-p'},
-  {url: '/img/Rectangle57.jpg', content: 'wedd-p'},
-  {url: '/img/Rectangle61.jpg', content: 'street-p'},
-  {url: '/img/Rectangle62.jpg', content: 'port-p'},
-  {url: '/img/Rectangle63.jpg', content: 'street-p'},
-  {url: '/img/Rectangle64.jpg', content: 'wedd-p'},
-  {url: '/img/Rectangle65.jpg', content: 'street-p'},
-  {url: '/img/Rectangle67.jpg', content: 'wedd-p'},
-  {url: '/img/Rectangle68.jpg', content: 'land-p'},
-  {url: '/img/Rectangle69.jpg', content: 'wedd-p'},
+  {content: 'port-p', url: '/images/1.webp'},
+  {url: '/images/2.webp', content: 'land-p'},
+  {url: '/images/3.webp', content: 'land-p'},
+  {url: '/images/4.webp', content: 'port-p'},
+  {url: '/images/5.webp', content: 'wedd-p'},
+  {url: '/images/6.webp', content: 'wedd-p'},
+  {url: '/images/7.webp', content: 'wedd-p'},
+  {url: '/images/8.webp', content: 'street-p'},
+  {url: '/images/9.webp', content: 'port-p'},
+  {url: '/images/10.webp', content: 'street-p'},
+  {url: '/images/11.webp', content: 'wedd-p'},
+  {url: '/images/12.webp', content: 'street-p'},
+  {url: '/images/13.webp', content: 'wedd-p'},
+  {url: '/images/14.webp', content: 'land-p'},
+  {url: '/images/15.webp', content: 'wedd-p'},
+  {content: 'port-p', url: '/images/16.webp'},
+  {url: '/images/17.webp', content: 'land-p'},
+  {url: '/images/18.webp', content: 'land-p'},
+  {url: '/images/19.webp', content: 'port-p'},
+  {url: '/images/20.webp', content: 'wedd-p'},
+  {url: '/images/21.webp', content: 'wedd-p'},
+  {url: '/images/22.webp', content: 'wedd-p'},
+  {url: '/images/23.webp', content: 'street-p'},
+  {url: '/images/24.webp', content: 'port-p'},
+  {url: '/images/25.webp', content: 'street-p'},
+  {url: '/images/26.webp', content: 'wedd-p'},
+  {url: '/images/27.webp', content: 'street-p'},
+  {url: '/images/28.webp', content: 'wedd-p'},
+  {url: '/images/29.webp', content: 'land-p'},
+  {url: '/images/30.webp', content: 'wedd-p'},
+  {content: 'port-p', url: '/images/31.webp'},
+  {url: '/images/32.webp', content: 'land-p'},
+  {url: '/images/33.webp', content: 'land-p'},
+  {url: '/images/34.webp', content: 'port-p'},
+  {url: '/images/35.webp', content: 'wedd-p'},
+]
 
+export const profilePic = "/images/profile.webp"
+
+export const workSlides1 = [
+  galleryImages[12], galleryImages[17]
+]
+export const workSlides2 = [
+  galleryImages[14], galleryImages[16]
+]
+
+export const workSlides3 = [
+  galleryImages[31], galleryImages[32]
+]
+
+export const preciousMoments = [
+  galleryImages[24], galleryImages[14], galleryImages[6], galleryImages[33]
 ]

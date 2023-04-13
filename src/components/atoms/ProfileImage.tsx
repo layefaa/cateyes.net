@@ -7,7 +7,7 @@ const ProfileImage = ({url}: { url: string }) => {
         <Image src={url} alt={''} fill
                sizes="100vw"
                style={{
-                 objectPosition: 'top',
+                 objectPosition: 'top center',
                  objectFit: 'cover',
                }}/>
       </div>

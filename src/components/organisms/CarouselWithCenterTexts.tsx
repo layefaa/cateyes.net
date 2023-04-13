@@ -3,7 +3,7 @@ import React from 'react';
 import {m} from "framer-motion";
 import {fadeIn} from "@/utils/motion";
 import {Carousel} from "@/components/molecules";
-import {homeCarousel, worksHeader, worksSubHeader} from "@/constants";
+import {homeCarousel, preciousMoments, worksHeader, worksSubHeader} from "@/constants";
 import styles from "@/styles";
 import {MorvaText, Overlay} from "@/components/atoms";
 
@@ -22,10 +22,10 @@ const CarouselWithCenterTexts = () => {
             <MorvaText>
               <p className={`${styles.headerText} ${styles.headerBottom} leading-[165%] text-center`}>{worksHeader}</p>
             </MorvaText>
-            <p className={'ce-primary-white2'}>{worksSubHeader}</p>
+            <p className={'ce-primary-white'}>{worksSubHeader}</p>
           </div>
           <Overlay/>
-          <Carousel images={homeCarousel}/>
+          <Carousel images={preciousMoments}/>
         </m.div>
 
       </div>
