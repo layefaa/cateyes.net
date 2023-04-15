@@ -5,7 +5,6 @@ import {galleryImages, tabsData} from "@/constants";
 import {Tabs} from "@/components/molecules";
 import styles from "@/styles";
 import {fadeIn} from "@/utils/motion";
-import LazyLoad from "react-lazyload";
 
 const WorksGallery = () => {
   const [activeTab, setTab] = useState(tabsData[0].content)
@@ -36,7 +35,6 @@ const WorksGallery = () => {
           {
             filteredImages.map((img, index) => {
               return (
-                  <LazyLoad key={index} once>
                     <m.img
                         key={index}
                         src={img.url}
@@ -47,7 +45,6 @@ const WorksGallery = () => {
                         transition={transition}
                         style={{breakInside: 'avoid-column'}}
                     />
-                  </LazyLoad>
               )
             })
           }

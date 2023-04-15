@@ -1,7 +1,7 @@
 'use client'
 import {MorvaText} from "@/components/atoms";
 import styles from "@/styles";
-import {homeCarousel, myWork, myWorkParagraph, workSlides1, workSlides2, workSlides3} from "@/constants";
+import {myWork, myWorkParagraph, workSlides1, workSlides2, workSlides3} from "@/constants";
 import {CarouselImages, WorksButton} from "@/components/molecules";
 import {m} from "framer-motion";
 import {fadeIn, textVariant} from "@/utils/motion";
