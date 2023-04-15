@@ -15,7 +15,7 @@ const CarouselWithCenterTexts = () => {
             whileInView="show"
             viewport={{once: true}}
             className={'w-full relative'}
-            variants={fadeIn('left', 'spring', 1, .5)}
+            variants={fadeIn('left', 'spring', .5, .5)}
         >
 
           <div className={`absolute w-full h-full z-[3] flex flex-col items-center justify-center `}>

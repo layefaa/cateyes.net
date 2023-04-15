@@ -3,7 +3,7 @@ import {ISocialIcon} from "@/interfaces";
 
 const WhatsappLink = ({strokeColor}: ISocialIcon) => {
   return (
-      <svg width="20" className={`cursor-pointer group/wt cursor-pointer `} height="20" viewBox="0 0 20 20"
+      <svg width="20" className={`cursor-pointer group/wt `} height="20" viewBox="0 0 20 20"
            fill="none" xmlns="http://www.w3.org/2000/svg">
         <path
             d="M2.5 17.5001L3.875 14.3334C2.82305 12.8401 2.35222 11.0143 2.55087 9.19852C2.74952 7.38274 3.60399 5.70188 4.95392 4.47136C6.30386 3.24085 8.05646 2.54527 9.88282 2.51518C11.7092 2.48508 13.4837 3.12254 14.8735 4.30791C16.2632 5.49328 17.1726 7.14508 17.431 8.95332C17.6893 10.7616 17.2789 12.6019 16.2768 14.1291C15.2746 15.6562 13.7495 16.7651 11.9878 17.2477C10.2261 17.7303 8.34885 17.5533 6.70833 16.7501L2.5 17.5001"

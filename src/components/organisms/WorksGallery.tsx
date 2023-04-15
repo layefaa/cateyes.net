@@ -4,6 +4,7 @@ import {m} from 'framer-motion';
 import {galleryImages, tabsData} from "@/constants";
 import {Tabs} from "@/components/molecules";
 import styles from "@/styles";
+import {fadeIn} from "@/utils/motion";
 
 const WorksGallery = () => {
   const [activeTab, setTab] = useState(tabsData[0].content)
@@ -18,7 +19,13 @@ const WorksGallery = () => {
   const transition = {duration: 0.5, ease: [0.43, 0.13, 0.23, 0.96]};
 
   return (
-      <div>
+      <m.div
+          initial="hidden"
+          whileInView="show"
+          viewport={{once: true}}
+          className={'w-full relative'}
+          variants={fadeIn('up', 'spring', 1, 1)}
+      >
         <div className={`overflow-x-auto ${styles.sectionPaddingY}`}>
           <Tabs handleClick={handleClick} activeTab={activeTab} tabsData={tabsData}/>
         </div>
@@ -41,7 +48,7 @@ const WorksGallery = () => {
             })
           }
         </div>
-      </div>
+      </m.div>
   );
 };
 
