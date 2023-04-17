@@ -25,7 +25,7 @@ const CarouselWithCenterTexts = () => {
             <p className={'ce-primary-white'}>{worksSubHeader}</p>
           </div>
           <Overlay/>
-          <Carousel priority images={preciousMoments}/>
+          <Carousel images={preciousMoments}/>
         </m.div>
 
       </div>
