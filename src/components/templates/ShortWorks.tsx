@@ -2,9 +2,12 @@
 import {MorvaText} from "@/components/atoms";
 import styles from "@/styles";
 import {myWork, myWorkParagraph, workSlides1, workSlides2, workSlides3} from "@/constants";
-import {CarouselImages, WorksButton} from "@/components/molecules";
+import { WorksButton} from "@/components/molecules";
 import {m} from "framer-motion";
 import {fadeIn, textVariant} from "@/utils/motion";
+import {lazy} from "react";
+
+const CarouselImages = lazy(() => import('@/components/molecules/CarouselImages'));
 
 const ShortWorks = () => {
   return (
@@ -21,7 +24,7 @@ const ShortWorks = () => {
           <p className={`${styles.sectionParagraph} ${styles.sectionMarginBetweenContent}  sm:-ml-[2rem]`}> {myWorkParagraph}</p>
         </m.div>
         <div
-            className={`w-full flex flex-col h-full  md:-[50rem] xl:h-[100rem]  sm:grid gap-24 grid-cols-12 grid-rows-6`}>
+            className={`w-full flex flex-col h-full  md:h-[90rem] xl:h-[100rem]  sm:grid gap-24 grid-cols-12 grid-rows-6`}>
           <m.div initial="hidden"
                  whileInView="show"
                  viewport={{once: true}}
