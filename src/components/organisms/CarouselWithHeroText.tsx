@@ -1,7 +1,7 @@
 'use client'
 import React from 'react';
 import {Carousel} from "@/components/molecules";
-import {MorvaText} from "@/components/atoms";
+import {MorvaText, Overlay} from "@/components/atoms";
 import {homeCarousel} from "@/constants";
 import {m} from "framer-motion";
 import {fadeIn, textVariant} from "@/utils/motion";
@@ -31,9 +31,10 @@ const CarouselWithHeroText = () => {
               initial="hidden"
               whileInView="show"
               viewport={{once: true}}
-              className={'w-full'}
+              className={'w-full relative'}
               variants={fadeIn('left', 'spring', 1, .5)}
           >
+            <Overlay/>
             <Carousel images={homeCarousel}/>
           </m.div>
 
