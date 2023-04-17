@@ -7,16 +7,14 @@ export default function Home() {
         <HomePage/>
         <Script
             id={'images'}
-            strategy={"lazyOnload"}
+            strategy={"worker"}
         >
           {
             `
           var elements = document.getElementsByClassName("images");
-
-for (var i = 0; i < elements.length; i++) {
-  elements[i].setAttribute("src", elements[i].getAttribute("data-src"));
-  elements[i].removeAttribute("data-src");
-}
+          for (var i = 0; i < elements.length; i++) {
+          elements[i].setAttribute("src", elements[i].getAttribute("data-src"));
+            }
             `
           }
 

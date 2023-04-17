@@ -34,7 +34,7 @@ const CarouselWithHeroText = () => {
               className={'w-full'}
               variants={fadeIn('left', 'spring', 1, .5)}
           >
-            <Carousel priority images={homeCarousel}/>
+            <Carousel images={homeCarousel}/>
           </m.div>
 
         </div>

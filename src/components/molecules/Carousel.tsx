@@ -7,7 +7,7 @@ import {CarouselSlideContainer} from "@/components/atoms";
 import {CarouselPagination} from "@/utils/CarouselPagination";
 
 
-const Carousel = ({images, priority}: { images: Array<object> , priority: boolean}) => {
+const Carousel = ({images}: { images: Array<object> }) => {
       // const shouldSwiperUpdate = useCallback(() => false, []);
       SwiperCore.use([Pagination, Autoplay])
       // @ts-ignore
@@ -24,7 +24,7 @@ const Carousel = ({images, priority}: { images: Array<object> , priority: boolea
                     return (
                         <SwiperSlide key={img.url}>
                           <div className={'relative aspect-[0.65] md:aspect-[1.5]  lg:aspect-[2.0] 2xl:aspect-[2.5]'}>
-                            <CarouselSlideContainer priority={priority} img={img}/>
+                            <CarouselSlideContainer img={img}/>
                           </div>
                         </SwiperSlide>
                     )
