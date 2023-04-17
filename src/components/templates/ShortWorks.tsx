@@ -30,21 +30,21 @@ const ShortWorks = () => {
                  viewport={{once: true}}
                  variants={fadeIn('right', 'tween', .6, .5)}
                  className=" w-full sm:col-span-7 sm:row-span-3 flex h-full">
-            {/*<CarouselImages images={workSlides2}/>*/}
+            <CarouselImages images={workSlides2}/>
           </m.div>
           <m.div initial="hidden"
                  whileInView="show"
                  viewport={{once: true}}
                  variants={fadeIn('right', 'tween', .75, .5)}
                  className=" w-full sm:col-span-7 sm:row-span-3  flex h-full ">
-            {/*<CarouselImages images={workSlides3}/>*/}
+            <CarouselImages images={workSlides3}/>
           </m.div>
           <m.div initial="hidden"
                  whileInView="show"
                  viewport={{once: true}}
                  variants={fadeIn('left', 'tween', 1, .5)}
                  className=" w-full sm:col-span-5 sm:row-span-4 sm:col-start-8 sm:row-start-1 flex h-full">
-            {/*<CarouselImages images={workSlides1}/>*/}
+            <CarouselImages images={workSlides1}/>
           </m.div>
           <m.div
               initial="hidden"
