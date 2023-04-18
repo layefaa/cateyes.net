@@ -132,7 +132,7 @@ export const slideIn = (type: string, delay: number, duration: number, direction
 
 export const textVariant = (delay: number) => ({
   hidden: {
-    y: -25,
+    y: -15,
     opacity: 0,
   },
   show: {
