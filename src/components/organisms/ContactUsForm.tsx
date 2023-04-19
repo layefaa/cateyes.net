@@ -23,7 +23,7 @@ const ContactUsForm = () => {
         </div>
         <InputField label={'Email'} placeholder={'e.g johndoe@mail.com'} type={'email'}/>
         <TextAreaField label={'Message'} placeholder={'e.g I want to schedule an appointment for a shoot......'}/>
-        <div onClick={ call} className={'flex w-full justify-center mt-[2rem]'}>
+        <div onClick={call} className={'flex w-full justify-center mt-[2rem]'}>
           <Button label={'Submit'} type={'submit'}/>
         </div>
       </div>
