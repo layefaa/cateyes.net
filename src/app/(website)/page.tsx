@@ -14,7 +14,6 @@ export default function Home() {
           var elements = document.getElementsByClassName("images");
           for (var i = 0; i < elements.length; i++) {
           elements[i].setAttribute("src", elements[i].getAttribute("data-src"));
-           elements[i].removeAttribute("data-src");
 }
             `
           }
