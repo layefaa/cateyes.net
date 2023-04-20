@@ -1,4 +1,4 @@
-import {transporter} from "@/app/api/mail/nodemailer";
+import {transporter} from "./nodemailer";
 
 export async function POST(req: Request) {
   // const body = await req.json()
