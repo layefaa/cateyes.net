@@ -1,3 +1,4 @@
+'use client'
 import {HomePage} from "@/components/pages";
 import Script from "next/script";
 
