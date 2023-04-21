@@ -4,7 +4,7 @@ export default function Head() {
       <title>Cateyes</title>
       <meta content="width=device-width, initial-scale=1" name="viewport" />
       <meta name="description" content="Cateyes Photography Website" />
-      <link rel="icon" href="/favicon.png" />
+      <link rel="icon" href="/favicon.svg" />
     </>
   )
 }
