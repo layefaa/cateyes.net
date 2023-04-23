@@ -9,12 +9,20 @@ const ContactUsForm = () => {
 
   // const sgMail = require('@sendgrid/mail')
   const call = async () => {
-    // await fetch('/api/mail',
-    //     {
-    //       method: 'POST',
-    //       body: JSON.stringify({hello: 'world'})
-    //     })
+    const res = await fetch('/api/mail',
+        {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify({
+                hello: 'world'
+              }
+          )
+        })
 
+    const result = await res.json()
+    console.log(result)
   }
 
 
