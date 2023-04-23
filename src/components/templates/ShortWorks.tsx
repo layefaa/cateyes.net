@@ -35,14 +35,14 @@ const ShortWorks = () => {
           <m.div initial="hidden"
                  whileInView="show"
                  viewport={{once: true}}
-                 variants={fadeIn('right', 'tween', .75, .5)}
+                 variants={fadeIn('right', 'tween', .6, .5)}
                  className=" w-full sm:col-span-7 sm:row-span-3  flex h-full ">
             <CarouselImages images={workSlides3}/>
           </m.div>
           <m.div initial="hidden"
                  whileInView="show"
                  viewport={{once: true}}
-                 variants={fadeIn('left', 'tween', 1, .5)}
+                 variants={fadeIn('left', 'tween', .6, .5)}
                  className=" w-full sm:col-span-5 sm:row-span-4 sm:col-start-8 sm:row-start-1 flex h-full">
             <CarouselImages images={workSlides1}/>
           </m.div>
@@ -50,7 +50,7 @@ const ShortWorks = () => {
               initial="hidden"
               whileInView="show"
               viewport={{once: true}}
-              variants={fadeIn('left', 'tween', 1, .5)}
+              variants={fadeIn('left', 'tween', .6, .5)}
               className={` w-full sm:col-span-5 sm:row-span-2 sm:col-start-8 sm:row-start-5 flex justify-center sm:justify-start items-center aboutLInnerPadding mt-[1rem] sm:mt-0 `}>
             <WorksButton label={'See All'}/>
           </m.div>

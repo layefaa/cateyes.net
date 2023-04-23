@@ -1,17 +1,23 @@
 'use client'
 import React from 'react';
+
 import {InputField, TextAreaField} from "@/components/molecules";
 import {Button} from "@/components/atoms";
 
 
 const ContactUsForm = () => {
+
+  // const sgMail = require('@sendgrid/mail')
   const call = async () => {
-    await fetch('/api/mail',
-        {
-          method: 'POST',
-          body: JSON.stringify({hello: 'world'})
-        })
+    // await fetch('/api/mail',
+    //     {
+    //       method: 'POST',
+    //       body: JSON.stringify({hello: 'world'})
+    //     })
+
   }
+
+
   // useEffect(() => {
   //   call()
   // }, [])

@@ -1,13 +1,19 @@
-import nodemailer from "nodemailer";
+import sendgrid from '@sendgrid/mail';
 
-const email = process.env.EMAIL
-const password = process.env.EMAIL_PASS
+sendgrid.setApiKey(process.env.SENDGRID_API_KEY as string)
+const msg = {
+  to: 'cateyesmedia22@gmail.com', // Change to your recipient
+  from: 'cateyesmedia22@gmail.com', // Change to your verified sender
+  subject: 'Sending with SendGrid is Fun',
+  text: 'and easy to do anywhere, even with Node.js',
+  html: '<strong>and easy to do anywhere, even with Node.js</strong>',
+}
 
-export const transporter = nodemailer.createTransport({
-  host: 'smtp.gmail.com',
-  port: 465,
-  auth: {
-    user: email,
-    pass: password
-  },
-})
+sendgrid
+    .send(msg)
+    .then(() => {
+      console.log('Email sent')
+    })
+    .catch((error: any) => {
+      console.error(error)
+    })
