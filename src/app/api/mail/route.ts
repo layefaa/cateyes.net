@@ -10,34 +10,12 @@ type Email = {
 
 
 export async function POST(req: Request) {
+
   sendgrid.setApiKey(process.env.SENDGRID_API_KEY as string)
+
   const data: Email = await req.json()
-  console.log('data: ', data)
 
   const {first_name, last_name, email, message} = data
-
-  // try {
-  // const {name, email, message} = req.body;
-
-  //send email to admin
-  // const emailSubject = await GetEmailSubject('contact/contact_subject.txt');
-
-  // const data = {
-  //   name: name,
-  //   email: email,
-  //   message: message,
-  // }
-
-
-  // const emailBody = await GetEmailBody('contact/contact_body.txt', data);
-
-  // const emailParam = {
-  //   to: email as string,
-  //   from: process.env.ADMIN_EMAIL as string,
-  //   subject: emailSubject,
-  //   text: emailBody,
-  // };
-
 
   //   return res.status(200).json({message: "Contact Email Sent Successfully"});
   // } catch (err) {
@@ -47,8 +25,8 @@ export async function POST(req: Request) {
 
 
   const msg = {
-    to: 'cateyesmedia22@gmail.com', // Change to your recipient
-    from: 'cateyesmedia22@gmail.com', // Change to your verified sender
+    to: 'cateyesmedia22@gmail.com',
+    from: 'cateyesmedia22@gmail.com',
     subject: 'New Client From Website',
     html: `
     <div style="border: 1px solid black; border-radius: 10px;padding: 40px">

@@ -51,8 +51,9 @@ export const socials = {
   ig: 'https://instagram.com/cat_eyes_shots?igshid=YmMyMTA2M2Y=',
   twitter: 'https://twitter.com/Cateyesdotnet?t=e0EjyIsALIFnniuJtQKNPA&s=09',
   fb: '/#',
-  tiktok: '/#',
+  tiktok: 'https://www.tiktok.com/@cateyes33?_t=8bn4kDfIASr&_r=1',
   youtube: 'https://youtube.com/@cateyes6805',
+  whatsApp: 'https://api.whatsapp.com/send?phone=2349023546789'
 }
 
 export const homeCarousel = [
