@@ -1,5 +1,5 @@
 import React from 'react';
-import {Label} from "@/components/atoms";
+import {Label, ErrorMessage} from "@/components/atoms";
 import {IInput} from "@/interfaces";
 import styles from "@/styles";
 
@@ -10,6 +10,7 @@ const InputField = ({label, type, placeholder}: IInput) => {
         <Label label={label}/>
         <input placeholder={placeholder} type={type}
                className={` ${styles.inputStyle}`}/>
+        <ErrorMessage error={''}/>
       </div>
   );
 };
