@@ -1,7 +1,7 @@
 'use client'
 import {motion} from "framer-motion";
 import React from 'react';
-import {FbLink, InstagramLink, TiktokLink, TwitterLink, WhatsappLink, YoutubeLink} from "@/components/atoms";
+import {InstagramLink, TiktokLink, TwitterLink, WhatsappLink, YoutubeLink} from "@/components/atoms";
 import {ISocialIcon} from "@/interfaces";
 import {slideIn} from "@/utils/motion";
 
