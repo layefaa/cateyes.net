@@ -1,17 +1,13 @@
 import '@/styles/globals.css'
 import React from 'react'
-import MenuContextProvider from "@/context/MenuContextProvider";
-import "swiper/swiper-bundle.css";
-import {quickSand} from "@/fonts";
+
 
 export default function RootLayout({children,}: { children: React.ReactNode }) {
   return (
-      <html lang="en" className={quickSand.className}>
+      <html lang="en">
       <head/>
       <body>
-      <MenuContextProvider>
-        {children}
-      </MenuContextProvider>
+      {children}
       </body>
       </html>
   )

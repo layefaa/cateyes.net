@@ -4,7 +4,7 @@ import localFont from "next/font/local"
 export const quickSand = Quicksand({
   weight: ['300', '400', '600'],
   subsets: ['latin'],
-  preload: true
+  // preload: true
 })
 
 export const morva = localFont({
