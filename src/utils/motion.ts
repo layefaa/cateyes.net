@@ -37,26 +37,26 @@ export const navBoxVariants = {
   },
 }
 
-export const footerVariants = {
-  hidden: {
-    opacity: 0,
-    y: 30,
-    transition: {
-      type: 'tween',
-      stiffness: 300,
-      damping: 140,
-    },
-  },
-  show: {
-    opacity: 1,
-    y: 0,
-    transition: {
-      type: 'tween',
-      stiffness: 80,
-      delay: 0.5,
-    },
-  },
-};
+// export const footerVariants = {
+//   hidden: {
+//     opacity: 0,
+//     y: 30,
+//     transition: {
+//       type: 'tween',
+//       stiffness: 300,
+//       damping: 140,
+//     },
+//   },
+//   show: {
+//     opacity: 1,
+//     y: 0,
+//     transition: {
+//       type: 'tween',
+//       stiffness: 80,
+//       delay: 0.5,
+//     },
+//   },
+// };
 
 export const parentVariants = (delay: number) => ({
       open: {
@@ -181,20 +181,27 @@ export const fadeIn = (direction: string, type: string, delay: number, duration:
 });
 
 
-export const zoomIn = (delay: number, duration: number) => ({
-  hidden: {
-    scale: 0,
-    opacity: 0,
-  },
-  show: {
-    scale: 1,
-    opacity: 1,
-    transition: {
-      type: 'tween',
-      delay,
-      duration,
-      ease: 'easeOut',
-    },
-  },
-});
+// export const zoomIn = (delay: number, duration: number) => ({
+//   hidden: {
+//     scale: 0,
+//     opacity: 0,
+//   },
+//   show: {
+//     scale: 1,
+//     opacity: 1,
+//     transition: {
+//       type: 'tween',
+//       delay,
+//       duration,
+//       ease: 'easeOut',
+//     },
+//   },
+// });
 
+
+export const framerError = {
+  initial: { opacity: 0, y: 10 },
+  animate: { opacity: 1, y: 0 },
+  exit: { opacity: 0, y: 10 },
+  transition: { duration: 0.2 },
+}

@@ -10,19 +10,22 @@ export interface ISocialIcon {
 
 export interface IButton {
   label: string,
-  onClick?: () => void,
-  type: 'button' | 'tab' | 'submit',
+  onClick?: () => void
+  type: 'button' | 'tab' | 'submit'
   active?: boolean
 }
 
 export interface ILink {
-  name: string,
-  route: string,
-  clickEvent?: ()=> void
+  name: string
+  route: string
+  clickEvent?: () => void
 }
 
 export interface IInput {
-  label: string,
-  type?: string,
+  label: string
+  type?: string
+  validation?: object
   placeholder?: string
+  name: string
+  multiline?: boolean
 }

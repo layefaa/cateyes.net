@@ -1,16 +1,49 @@
-import React from 'react';
-import {Label, ErrorMessage} from "@/components/atoms";
+'use client'
+import {ErrorMessage, Label} from "@/components/atoms";
 import {IInput} from "@/interfaces";
 import styles from "@/styles";
+import {useFormContext} from "react-hook-form";
+import {findInputError} from "@/utils/findInputError";
+import {isFormInvalid} from "@/utils/isFormInvalid";
+import {AnimatePresence} from "framer-motion";
 
 
-const InputField = ({label, type, placeholder}: IInput) => {
+const InputField = ({label, type, placeholder, validation, multiline}: IInput) => {
+  const {
+    register,
+    formState: {errors},
+  } = useFormContext()
+
+  const inputError = findInputError(errors, label)
+  const isInvalid = isFormInvalid(inputError)
+
+  // @ts-ignore
   return (
       <div className={'mb-[1.5rem] sm:mb-[2rem] lg:mb-[3rem] flex flex-col w-full'}>
-        <Label label={label}/>
-        <input placeholder={placeholder} type={type}
-               className={` ${styles.inputStyle}`}/>
-        <ErrorMessage error={''}/>
+        <div className={'flex justify-between items-center'}>
+          <Label label={label}/>
+          <AnimatePresence mode="wait" initial={false}>
+            {isInvalid && (
+                <ErrorMessage
+                    // @ts-ignore
+                    error={inputError.error.message}
+                    // key={inputError?.error.message}
+                />
+            )}
+          </AnimatePresence>
+        </div>
+        {
+          (multiline) ?
+              <textarea
+                  {...register(label, validation
+                  )}
+                  className={`${styles.inputStyle} h-[12rem]`} placeholder={placeholder}/>
+              :
+              <input placeholder={placeholder} type={type}
+                     className={` ${styles.inputStyle}`}
+                     {...register(label, validation)}
+              />
+        }
       </div>
   );
 };

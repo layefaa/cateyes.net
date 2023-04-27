@@ -1,8 +1,8 @@
 'use client'
-import React from 'react';
-
-import {InputField, TextAreaField} from "@/components/molecules";
+import {InputField} from "@/components/molecules";
 import {Button} from "@/components/atoms";
+import {FormProvider, useForm} from "react-hook-form";
+import {email_validation, text_validation} from "@/utils/inputValidation";
 
 
 const ContactUsForm = () => {
@@ -24,23 +24,37 @@ const ContactUsForm = () => {
     const result = await res.json()
     console.log(result)
   }
+  const methods = useForm()
+
+  const onSubmit = methods.handleSubmit(data => {
+    console.log(data)
+  })
 
 
   // useEffect(() => {
   //   call()
   // }, [])
   return (
-      <div className={`w-full h-fit flex flex-col bg-ce-tertiary-black p-[2rem] md:p-[3rem] xl:p-[6rem]`}>
-        <div className={'flex lg:gap-[2rem] flex-col lg:flex-row justify-between'}>
-          <InputField label={'First Name'} placeholder={'e.g John'} type={'text'}/>
-          <InputField label={'Last Name'} placeholder={'e.g Doe'} type={'text'}/>
-        </div>
-        <InputField label={'Email'} placeholder={'e.g johndoe@mail.com'} type={'email'}/>
-        <TextAreaField label={'Message'} placeholder={'e.g I want to schedule an appointment for a shoot......'}/>
-        <div onClick={call} className={'flex w-full justify-center mt-[2rem]'}>
-          <Button label={'Submit'} type={'submit'}/>
-        </div>
-      </div>
+      <FormProvider {...methods}>
+        <form
+            onSubmit={e => e.preventDefault()}
+            noValidate
+            className={`w-full h-fit flex flex-col bg-ce-tertiary-black p-[2rem] md:p-[3rem] xl:p-[6rem]`}>
+          <div className={'flex lg:gap-[2rem] flex-col lg:flex-row justify-between'}>
+            <InputField label={'First Name'} name={'last_name'} placeholder={'e.g John'} type={'text'}
+                        validation={text_validation}/>
+            <InputField label={'Last Name'} name={'first_name'} placeholder={'e.g Doe'} type={'text'}
+                        validation={text_validation}/>
+          </div>
+          <InputField label={'email'} name={'email'} placeholder={'e.g johndoe@mail.com'} type={'email'}
+                      validation={email_validation}/>
+          <InputField multiline name={'message'} label={'Message'} validation={text_validation}
+                      placeholder={'e.g I want to schedule an appointment for a shoot......'}/>
+          <div className={'flex w-full justify-center mt-[2rem]'}>
+            <Button onClick={onSubmit} label={'Submit'} type={'submit'}/>
+          </div>
+        </form>
+      </FormProvider>
   );
 };
 
