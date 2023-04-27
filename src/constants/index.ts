@@ -53,7 +53,7 @@ export const socials = {
   // fb: '/#',
   tiktok: 'https://www.tiktok.com/@cateyes33?_t=8bn4kDfIASr&_r=1',
   youtube: 'https://youtube.com/@cateyes6805',
-  whatsApp: 'https://api.whatsapp.com/send?phone=2347062103954'
+  whatsApp: "https://wa.me/2347062103954"
 }
 
 export const homeCarousel = [
