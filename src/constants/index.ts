@@ -41,7 +41,7 @@ export const menuSubHeader = 'Tell your story through pixels'
 
 export const email = 'cateyesmedia22@gmail.com'
 
-export const phone = '09023546789'
+export const phone = '0706 210 3954'
 
 export const letsCreateMemories = 'let’s create memories together'
 
@@ -50,10 +50,10 @@ export const contactUsParagraph = 'Join forces with us and let\'s work together 
 export const socials = {
   ig: 'https://instagram.com/cat_eyes_shots?igshid=YmMyMTA2M2Y=',
   twitter: 'https://twitter.com/Cateyesdotnet?t=e0EjyIsALIFnniuJtQKNPA&s=09',
-  fb: '/#',
+  // fb: '/#',
   tiktok: 'https://www.tiktok.com/@cateyes33?_t=8bn4kDfIASr&_r=1',
   youtube: 'https://youtube.com/@cateyes6805',
-  whatsApp: 'https://api.whatsapp.com/send?phone=2349023546789'
+  whatsApp: 'https://api.whatsapp.com/send?phone=2347062103954'
 }
 
 export const homeCarousel = [

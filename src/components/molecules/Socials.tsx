@@ -12,7 +12,7 @@ const Socials = ({strokeColor, dir}: ISocialIcon) => {
                   variants={slideIn('spring', 0, .5, dir)} className={`flex w-fit gap-8`}>
         <YoutubeLink strokeColor={strokeColor}/>
         <TwitterLink strokeColor={strokeColor}/>
-        <FbLink strokeColor={strokeColor}/>
+        {/*<FbLink strokeColor={strokeColor}/>*/}
         <WhatsappLink strokeColor={strokeColor}/>
         <TiktokLink strokeColor={strokeColor}/>
         <InstagramLink strokeColor={strokeColor}/>
