@@ -15,9 +15,11 @@ export async function POST(req: Request) {
 
   const data: Email = await req.json()
 
+  console.log(data)
+
   const {first_name, last_name, email, message} = data
 
-  //   return res.status(200).json({message: "Contact Email Sent Successfully"});
+  //
   // } catch (err) {
   //   const errorMessage = err instanceof Error ? err.message : 'Internal server error';
   //   res.status(500).json({message: errorMessage});
@@ -40,15 +42,13 @@ export async function POST(req: Request) {
   try {
     await sendgrid.send(msg)
         .then(() => {
-          return 'success'
+          return NextResponse.json({message: "Contact Email Sent Successfully"});
           // console.log('Email sent')
         })
         .catch((error: any) => {
-          return error
+          return NextResponse.json({error: "Internal Error"});
         })
   } catch (error) {
     throw new Error('Email could not be sent, Please try again later');
   }
-
-  return NextResponse.json({first_name, last_name, email, message})
 }

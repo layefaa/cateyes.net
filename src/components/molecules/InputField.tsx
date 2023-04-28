@@ -8,13 +8,13 @@ import {isFormInvalid} from "@/utils/isFormInvalid";
 import {AnimatePresence} from "framer-motion";
 
 
-const InputField = ({label, type, placeholder, validation, multiline}: IInput) => {
+const InputField = ({label, type, placeholder, validation, multiline, id}: IInput) => {
   const {
     register,
     formState: {errors},
   } = useFormContext()
 
-  const inputError = findInputError(errors, label)
+  const inputError = findInputError(errors, id)
   const isInvalid = isFormInvalid(inputError)
 
   // @ts-ignore
@@ -35,13 +35,12 @@ const InputField = ({label, type, placeholder, validation, multiline}: IInput) =
         {
           (multiline) ?
               <textarea
-                  {...register(label, validation
-                  )}
+                  {...register(id, validation)}
                   className={`${styles.inputStyle} h-[12rem]`} placeholder={placeholder}/>
               :
               <input placeholder={placeholder} type={type}
                      className={` ${styles.inputStyle}`}
-                     {...register(label, validation)}
+                     {...register(id, validation)}
               />
         }
       </div>

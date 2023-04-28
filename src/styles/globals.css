@@ -99,3 +99,13 @@ h6 {
     grid-gap: 1rem;
 }
 
+@keyframes spin-slow {
+     0% { transform: rotate(0); }
+     100% { transform: rotate(360deg); }
+ }
+
+.animate-spin-slow {
+    animation: spin-slow 3s linear infinite;
+}
+
+

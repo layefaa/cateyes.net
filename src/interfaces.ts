@@ -12,7 +12,9 @@ export interface IButton {
   label: string,
   onClick?: () => void
   type: 'button' | 'tab' | 'submit'
-  active?: boolean
+  active?: boolean,
+  isSuccess?: boolean
+  isLoading?: boolean
 }
 
 export interface ILink {
@@ -28,4 +30,6 @@ export interface IInput {
   placeholder?: string
   name: string
   multiline?: boolean
+  id: string
+
 }
