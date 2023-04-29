@@ -30,6 +30,6 @@ export async function POST(req: Request) {
     return NextResponse.json({message: "Contact Email Sent Successfully"});
   } catch (error) {
     console.log(error);
-    return NextResponse.json({"message": "Error"});
+    return NextResponse.error();
   }
 }

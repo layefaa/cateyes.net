@@ -2,6 +2,7 @@ import React from 'react';
 import {IButton} from "@/interfaces";
 import styles from "@/styles";
 import {AiOutlineCheck, AiOutlineLoading3Quarters} from "react-icons/ai";
+import {MdError} from "react-icons/md";
 
 
 const Button = ({label, onClick, type = 'button', active, isLoading, isSuccess, isError}: IButton) => {
@@ -56,7 +57,7 @@ const Button = ({label, onClick, type = 'button', active, isLoading, isSuccess, 
                       :
                       isError
                           ? <div className={' h-full w-36 bg-red-500 rounded flex justify-center items-center'}>
-                            <AiOutlineCheck color={'white'}/>
+                            <MdError color={'white'}/>
                           </div>
                           :
                           <div className={' h-full w-36 bg-blue-500 rounded flex justify-center items-center'}>

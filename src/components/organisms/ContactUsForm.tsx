@@ -24,8 +24,6 @@ const ContactUsForm = () => {
   const methods = useForm()
 
   const onSubmit = methods.handleSubmit(data => {
-    setSuccess(false)
-    setError(false)
     setLoading(true)
     sendMail(data)
         .then(
@@ -40,6 +38,8 @@ const ContactUsForm = () => {
         .finally(() => {
           setTimeout(() => {
             setLoading(false)
+            setSuccess(false)
+            setError(false)
           }, 1000)
         })
   })
