@@ -10,20 +10,7 @@ type EmailType = {
 
 
 export async function POST(req: Request) {
-
-  sendgrid.setApiKey(process.env.SENDGRID_API_KEY as string)
-
-  const data: EmailType = await req.json()
-
-  const {first_name, last_name, email, message} = data
-
-  //
-  // } catch (err) {
-  //   const errorMessage = err instanceof Error ? err.message : 'Internal server error';
-  //   res.status(500).json({message: errorMessage});
-  // }
-
-
+  const {first_name, last_name, email, message}: EmailType = await req.json()
   const msg = {
     to: 'cateyesmedia22@gmail.com',
     from: 'cateyesmedia22@gmail.com',
@@ -37,12 +24,12 @@ export async function POST(req: Request) {
     `
   }
 
-  await sendgrid.send(msg)
-      .then(() => {
-        return NextResponse.json({message: "Contact Email Sent Successfully"});
-        // console.log('EmailType sent')
-      })
-      .catch((error: any) => {
-        return NextResponse.json({error: "Internal Error"});
-      })
+  try {
+    sendgrid.setApiKey(process.env.SENDGRID_API_KEY as string)
+    await sendgrid.send(msg)
+    return NextResponse.json({message: "Contact Email Sent Successfully"});
+  } catch (error) {
+    console.log(error);
+    return NextResponse.json({"message": "Error"});
+  }
 }

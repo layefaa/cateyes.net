@@ -15,6 +15,7 @@ export interface IButton {
   active?: boolean,
   isSuccess?: boolean
   isLoading?: boolean
+  isError?: boolean
 }
 
 export interface ILink {

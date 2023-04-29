@@ -4,7 +4,7 @@ import styles from "@/styles";
 import {AiOutlineCheck, AiOutlineLoading3Quarters} from "react-icons/ai";
 
 
-const Button = ({label, onClick, type = 'button', active, isLoading, isSuccess}: IButton) => {
+const Button = ({label, onClick, type = 'button', active, isLoading, isSuccess, isError}: IButton) => {
   switch (type) {
     case 'button':
       return (
@@ -46,17 +46,25 @@ const Button = ({label, onClick, type = 'button', active, isLoading, isSuccess}:
                       <path
                           d="M12.4756 5.42799C12.712 5.19162 12.712 4.80838 12.4756 4.57201L8.62373 0.720143C8.38736 0.483773 8.00413 0.483773 7.76776 0.720143C7.53139 0.956513 7.53139 1.33974 7.76776 1.57611L11.1916 5L7.76776 8.42389C7.53139 8.66026 7.53139 9.04349 7.76776 9.27986C8.00413 9.51623 8.38736 9.51623 8.62373 9.27986L12.4756 5.42799ZM0 5.60526H12.0476V4.39474H0L0 5.60526Z"/>
                     </svg>
-                  </div> : !isSuccess ?
-                      <div className={' h-full w-36 bg-blue-500 rounded flex justify-center items-center'}>
-                        <div className={'animate-spin'}>
-                          <AiOutlineLoading3Quarters color={'white'}/>
-                        </div>
-
-                      </div>
-                      :
+                  </div> :
+                  isSuccess
+                      ?
                       <div className={' h-full w-36 bg-green-500 rounded flex justify-center items-center'}>
                         <AiOutlineCheck color={'white'}/>
                       </div>
+
+                      :
+                      isError
+                          ? <div className={' h-full w-36 bg-red-500 rounded flex justify-center items-center'}>
+                            <AiOutlineCheck color={'white'}/>
+                          </div>
+                          :
+                          <div className={' h-full w-36 bg-blue-500 rounded flex justify-center items-center'}>
+                            <div className={'animate-spin'}>
+                              <AiOutlineLoading3Quarters color={'white'}/>
+                            </div>
+                          </div>
+
             }
 
 
