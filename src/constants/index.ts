@@ -39,7 +39,7 @@ export const menuHeader = 'let’s works together'
 
 export const menuSubHeader = 'Tell your story through pixels'
 
-export const email = 'cateyesmedia22@gmail.com'
+export const cateyes_email = 'cateyesmedia22@gmail.com'
 
 export const phone = '0706 210 3954'
 

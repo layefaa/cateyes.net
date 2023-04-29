@@ -4,7 +4,7 @@ import styles from "@/styles";
 import {useMenuContext} from "@/context/MenuContext";
 import {ContactUsButton, Links} from "@/components/molecules";
 import {MorvaText} from "@/components/atoms";
-import {email, menuHeader, menuSubHeader, phone} from "@/constants";
+import {cateyes_email, menuHeader, menuSubHeader, phone} from "@/constants";
 import {AnimatePresence, m} from "framer-motion"
 import {childVariants, navBoxVariants, parentVariants} from "@/utils/motion";
 
@@ -35,7 +35,7 @@ const NavigationBox = () => {
                 <m.p variants={childVariants} className={'font-light py-10 md:py-28 '}>{menuSubHeader}</m.p>
                 <m.div variants={childVariants}
                             className={`text-center text-ce-secondary-white font-semibold  pb-10 md:pb-28`}>
-                  <p>{email}</p>
+                  <p>{cateyes_email}</p>
                   <p className={`mt-4 md:mt-6`}>{phone}</p>
                 </m.div>
                 <m.div

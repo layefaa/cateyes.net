@@ -1,5 +1,6 @@
 import sendgrid from "@sendgrid/mail";
 import {NextResponse} from "next/server";
+import {cateyes_email} from "@/constants";
 
 type EmailType = {
   first_name?: string,
@@ -12,8 +13,8 @@ type EmailType = {
 export async function POST(req: Request) {
   const {first_name, last_name, email, message}: EmailType = await req.json()
   const msg = {
-    to: 'cateyesmedia22@gmail.com',
-    from: 'cateyesmedia22@gmail.com',
+    to: cateyes_email,
+    from: cateyes_email,
     subject: 'New Client From Website',
     html: `
     <div style="border: 1px solid black; border-radius: 10px;padding: 40px">
