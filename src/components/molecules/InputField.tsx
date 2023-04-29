@@ -27,7 +27,8 @@ const InputField = ({label, type, placeholder, validation, multiline, id}: IInpu
                 <ErrorMessage
                     // @ts-ignore
                     error={inputError.error.message}
-                    // key={inputError?.error.message}
+                    // @ts-ignore
+                    key={inputError.error.message}
                 />
             )}
           </AnimatePresence>

@@ -40,6 +40,7 @@ const ContactUsForm = () => {
             setLoading(false)
             setSuccess(false)
             setError(false)
+            methods.reset()
           }, 1000)
         })
   })
