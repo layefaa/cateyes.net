@@ -1,7 +1,7 @@
 import sendgrid from "@sendgrid/mail";
 import {NextResponse} from "next/server";
 
-type Email = {
+type EmailType = {
   first_name?: string,
   last_name?: string,
   email?: string,
@@ -13,9 +13,7 @@ export async function POST(req: Request) {
 
   sendgrid.setApiKey(process.env.SENDGRID_API_KEY as string)
 
-  const data: Email = await req.json()
-
-  console.log(data)
+  const data: EmailType = await req.json()
 
   const {first_name, last_name, email, message} = data
 
@@ -39,16 +37,12 @@ export async function POST(req: Request) {
     `
   }
 
-  try {
-    await sendgrid.send(msg)
-        .then(() => {
-          return NextResponse.json({message: "Contact Email Sent Successfully"});
-          // console.log('Email sent')
-        })
-        .catch((error: any) => {
-          return NextResponse.json({error: "Internal Error"});
-        })
-  } catch (error) {
-    throw new Error('Email could not be sent, Please try again later');
-  }
+  await sendgrid.send(msg)
+      .then(() => {
+        return NextResponse.json({message: "Contact Email Sent Successfully"});
+        // console.log('EmailType sent')
+      })
+      .catch((error: any) => {
+        return NextResponse.json({error: "Internal Error"});
+      })
 }
