@@ -1,6 +1,9 @@
 import {HomePage} from "@/components/pages";
 import Script from "next/script";
 
+export const metadata = {
+  title: 'Home'
+}
 export default function Home() {
   return (
       <>
