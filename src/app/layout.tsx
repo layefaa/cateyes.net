@@ -15,12 +15,12 @@ export const metadata = {
     siteName: 'Cateyes.net',
     images: [
       {
-        url: 'Cateyes.net/cateyes.svg',
+        url: '/cateyes.svg',
         width: 800,
         height: 600,
       },
       {
-        url: 'Cateyes.net/cateyes.svg',
+        url: '/cateyes.svg',
         width: 1800,
         height: 1600,
         alt: '',
@@ -29,14 +29,35 @@ export const metadata = {
     locale: 'en-US',
     type: 'website',
   },
-
+  icons: {
+    icon: '/favicon.png',
+    shortcut:'/favicon.png',
+    apple: '/favicon.png',
+    // other: {
+    //   rel: 'apple-touch-icon-precomposed',
+    //   url: '/apple-touch-icon-precomposed.png',
+    // },
+  },
+  robots: {
+    index: true,
+    follow: true,
+    nocache: true,
+    googleBot: {
+      index: true,
+      follow: false,
+      noimageindex: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
+  viewport: {
+    width: 'device-width',
+    initialScale: 1,
+    maximumScale: 1,
+  },
 }
 
-// export const metadata = {
-//   title: {
-//     template: `Cateyes Photography | %s `,
-//   },
-// }
 
 export default function RootLayout({children,}: { children: React.ReactNode }) {
   return (
