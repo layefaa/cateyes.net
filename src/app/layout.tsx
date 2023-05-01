@@ -1,5 +1,6 @@
 import '@/styles/globals.css'
 import React from 'react'
+import {worksHeader} from "@/constants";
 
 
 export const metadata = {
@@ -10,7 +11,7 @@ export const metadata = {
   description: 'CatEyes Photography Studio Website',
   openGraph: {
     title: 'CatEyes Photography',
-    description: 'CatEyes Photography Studio Website',
+    description:  worksHeader,
     url: 'https://cateyes.net',
     siteName: 'Cateyes.net',
     images: [
