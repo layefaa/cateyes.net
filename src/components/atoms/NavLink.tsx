@@ -15,6 +15,7 @@ const NavLinks = ({route, name,clickEvent}: ILink) => {
       <MorvaText>
         <m.div variants={childVariants}>
           <Link
+              passHref
               onClick={clickEvent}
               className={` leading-[165%] hover:text-ce-secondary-white text-32 md:text-36 lg:text-48 ${currentRoute === route ? "text-ce-secondary-white " : "text-ce-tertiary-white"}`}
               href={route}>

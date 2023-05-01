@@ -1,8 +1,9 @@
-import React, {lazy} from 'react';
 import {Navbar} from "@/components/organisms";
+import dynamic from "next/dynamic";
 
-const NavigationBox = lazy(() => import('@/components/organisms/NavigationBox'));
-
+const NavigationBox = dynamic(() => import('@/components/organisms/NavigationBox'), {
+  ssr: false
+});
 const Header = () => {
   return (
       <header className={`relative`}>

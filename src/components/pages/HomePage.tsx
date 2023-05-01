@@ -1,8 +1,15 @@
-import React from 'react';
-import {Hero, ShortAbout, ShortWorks} from "@/components/templates";
+import {Hero} from "@/components/templates";
+import dynamic from "next/dynamic";
 
-// const ShortAbout = lazy(() => import('@/components/templates/ShortAbout'));
+// const ShortAbout = lazy(() => );
 // const ShortWorks = lazy(() => import('@/components/templates/ShortWorks'));
+const ShortAbout = dynamic(() => import('@/components/templates/ShortAbout'), {
+  ssr: false
+});
+
+const ShortWorks = dynamic(() => import('@/components/templates/ShortWorks'), {
+  ssr: false
+});
 
 const HomePage = () => {
   return (

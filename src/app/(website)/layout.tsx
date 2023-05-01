@@ -2,17 +2,15 @@
 import MenuContextProvider from "@/context/MenuContextProvider";
 import "swiper/swiper-bundle.css";
 import {domAnimation, LazyMotion} from "framer-motion"
-import React, {lazy} from 'react'
 import styles from "@/styles";
 import {Header} from "@/components/templates";
 import {quickSand} from "@/fonts";
+import dynamic from 'next/dynamic';
 
-const Footer = lazy(() => import('@/components/templates/Footer'));
-
-// export const metadata = {
-//   title: 'Bambuu',
-//   description: 'Bambuu Website',
-// }
+// const Footer = lazy(() => import('@/components/templates/Footer'));
+const Footer = dynamic(() => import('@/components/templates/Footer'), {
+  ssr: false
+});
 
 export default function WebsiteLayout({children,}: { children: React.ReactNode }) {
   return (

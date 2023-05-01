@@ -25,7 +25,7 @@ const CarouselWithCenterTexts = () => {
               variants={textVariant(.7)}
               className={`absolute w-full h-full z-[3] flex flex-col items-center justify-center `}>
             <MorvaText>
-              <p className={`${styles.headerText} ${styles.headerBottom} leading-[165%] text-center`}>{worksHeader}</p>
+              <h1 className={`${styles.headerText} ${styles.headerBottom} leading-[165%] text-center`}>{worksHeader}</h1>
             </MorvaText>
             <p className={'ce-primary-white'}>{worksSubHeader}</p>
           </m.div>
