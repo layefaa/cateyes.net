@@ -9,9 +9,9 @@ export const metadata = {
   },
   description: 'CatEyes Photography Studio Website',
   openGraph: {
-    title: 'Cateyes.net',
+    title: 'CatEyes Photography',
     description: 'CatEyes Photography Studio Website',
-    url: 'Cateyes.net',
+    url: 'https://cateyes.net',
     siteName: 'Cateyes.net',
     images: [
       {

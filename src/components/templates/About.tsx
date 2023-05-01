@@ -28,7 +28,7 @@ const About = () => {
                viewport={{once: true}}
                variants={fadeIn('left', 'tween', 1.4, .5)}
                className={'w-full mt-[5rem] lg:mt-0 lg:w-1/2'}>
-          <ProfileImage url={profilePic}/>
+          <ProfileImage priority url={profilePic}/>
         </m.div>
       </div>
   );

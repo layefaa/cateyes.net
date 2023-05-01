@@ -29,7 +29,7 @@ const ShortAbout = () => {
                viewport={{once: true}}
                variants={fadeIn('left', 'tween', 1.4, .5)}
                className={'w-full sm:w-1/2 sm:h-full md:h-[70%] bg-red-800'}>
-          <ProfileImage url={profilePic}/>
+          <ProfileImage priority={false} url={profilePic}/>
         </m.div>
       </div>
   );
