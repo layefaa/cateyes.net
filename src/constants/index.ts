@@ -75,7 +75,7 @@ export const myWork = 'My Works'
 
 export const myWorkParagraph = 'View and be inspired'
 
-export const worksHeader = 'Capturing Life\'s Precious Moments'
+export const worksHeader = "Capturing Life's Precious Moments"
 export const worksSubHeader = 'Capturing memories through the lens'
 
 export const galleryImages = [
