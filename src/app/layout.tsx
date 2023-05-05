@@ -16,12 +16,12 @@ export const metadata = {
     siteName: 'Cateyes.net',
     images: [
       {
-        url: '/cateyes.svg',
+        url: '/cateyes.png',
         width: 800,
         height: 600,
       },
       {
-        url: '/cateyes.svg',
+        url: '/cateyes.png',
         width: 1800,
         height: 1600,
         alt: '',
@@ -31,9 +31,9 @@ export const metadata = {
     type: 'website',
   },
   icons: {
-    icon: '/favicon.png',
-    shortcut:'/favicon.png',
-    apple: '/favicon.png',
+    icon: '/cateyes.png',
+    shortcut:'/cateyes.png',
+    apple: '/cateyes.png',
     // other: {
     //   rel: 'apple-touch-icon-precomposed',
     //   url: '/apple-touch-icon-precomposed.png',
