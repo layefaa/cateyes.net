@@ -14,7 +14,7 @@ const Navbar = () => {
           variants={navVariants}
           initial="hidden"
           whileInView="show"
-          viewport={{ once: true }}
+          viewport={{once: true}}
           className={`${styles.flexBetweenCenter} filter text-ce-secondary-white text-14 font-semibold  w-screen z-20 fixed h-[7.5rem] md:h-[8rem] top-0 ${styles.containerPaddingX}`}>
         <div className={`w-[30%]`}>
           <FollowEffect/>
