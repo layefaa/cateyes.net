@@ -5,11 +5,19 @@ import {myWork, myWorkParagraph, workSlides1, workSlides2, workSlides3} from "@/
 import { WorksButton} from "@/components/molecules";
 import {m} from "framer-motion";
 import {fadeIn, textVariant} from "@/utils/motion";
-import {lazy} from "react";
+import {lazy, useEffect} from "react";
 
 const CarouselImages = lazy(() => import('@/components/molecules/CarouselImages'));
 
 const ShortWorks = () => {
+    useEffect(()=>{
+
+          const elements = document.getElementsByClassName("images");
+          for (let i = 0; i < elements.length; i++) {
+            // @ts-ignore
+              elements[i].setAttribute("src", elements[i].getAttribute("data-src"));
+          }
+    }, [])
   return (
       <div className={`h-full flex flex-col`}>
         <m.div
