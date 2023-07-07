@@ -1,8 +1,8 @@
 import React from 'react';
 
-const Overlay = () => {
+const Overlay = ({className}: {className?: string}) => {
   return (
-      <div className={'w-full h-full absolute gradient z-[2]'}/>
+      <div className={`w-full h-full absolute gradient z-[2] opacity-100 ${className}`}/>
   );
 };
 

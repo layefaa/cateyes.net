@@ -6,6 +6,7 @@ import {Tabs} from "@/components/molecules";
 import styles from "@/styles";
 import {fade} from "@/utils/motion";
 import Image from "next/image";
+import Overlay from "../atoms/Overlay";
 
 const WorksGallery = () => {
     const [activeTab, setTab] = useState(tabsData[0].content)
@@ -25,7 +26,7 @@ const WorksGallery = () => {
             whileInView="show"
             viewport={{once: true}}
             className={'w-full relative'}
-            variants={fade( 'spring', 1, 1)}
+            variants={fade('spring', 1, 1)}
         >
             <div className={`overflow-x-auto ${styles.sectionPaddingY}`}>
                 <Tabs handleClick={handleClick} activeTab={activeTab} tabsData={tabsData}/>
@@ -38,11 +39,14 @@ const WorksGallery = () => {
                         return (
                             <m.div initial={{opacity: 0, y: -100}}
                                    animate={{opacity: 1, y: 0}}
+                                   className={'relative group'}
                                    transition={transition} key={index}>
+                                <Overlay
+                                    className={'transition-opacity duration-300 delay-100 group-hover:opacity-0 cursor-pointer gradient-image'}/>
                                 <Image
-
                                     src={img.url}
                                     alt=""
+                                    className={'cursor-pointer transition-transform  group-hover:scale-110 duration-500 '}
                                     width={1000}
                                     height={1000}
                                     placeholder='blur'
