@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const Logo = () => {
   return (
-      <Image src={cateyes} alt={'Cateyes'} fill priority/>
+      <Image src={cateyes} alt={'logo'} fill priority/>
   );
 };
 
