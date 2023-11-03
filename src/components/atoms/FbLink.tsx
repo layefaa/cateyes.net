@@ -1,7 +1,5 @@
 import React from 'react';
 import {ISocialIcon} from "@/interfaces";
-import {socials} from "@/constants";
-import Link from "next/link";
 
 const FbLink = ({strokeColor}: ISocialIcon) => {
   return (
